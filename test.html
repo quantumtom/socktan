@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+
+<html lang="en" class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://socktan/reel">--><base href=".">
+
+			<title>jquery</title>
+
+	<link type="text/css" rel="stylesheet" href="./test_files/jquery.mobile-1.1.0.min.css">
+
+	<link type="text/css" rel="stylesheet" href="./test_files/mobile-extra.css">
+	
+	<link href="http://socktan/favicon.ico" rel="shortcut icon" type="image/ico">
+
+		<meta name="description" content="We have been building websites for quite some time now. One of the drawbacks of that is many of our early works are no longer online. Fortunately, that is not true in every case.">
+
+		<meta name="keywords" content="websites,web,web development,api,rest,twitter,json,ajax">
+
+	<meta charset="UTF-8">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<meta name="viewport" content="height=device-height,width=device-width,user-scalable=no">
+
+	
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+	<meta name="Distribution" content="Global">
+
+	<meta name="Robots" content="index,follow">
+
+	<meta name="verify-v1" content="Rc6KplhAOgXutS7j+eHBaJpe4g21p3yvO663bjNJ8v0=">
+
+	<meta name="ICBM" content="34.019597,-118.489243">
+
+	<meta name="DC.title" content="Socktan Digital Media"> 
+
+	<meta name="zipcode" content="90401,90402,90403,90404,90405,90034,90025,90064,90024,90232,90066,90067,90035,90019,90291,90292,90230,90056,90016,90212,90211,90210,90048,90045,90064,90049">
+
+	<meta name="google-site-verification" content="zrmxmTlJtteLgRs9qxjBwvl2y22ydIzDr3gNnuC-ApY">
+
+	<!--
+
+	<link rel="apple-touch-icon" href="/img/touch-icon-iphone.png" />
+
+	<link rel="apple-touch-icon" sizes="72x72" href="/img/touch-icon-ipad.png" />
+
+	<link rel="apple-touch-icon" sizes="114x114" href="/img/touch-icon-iphone4.png" />
+
+	-->
+
+</head>
+
+	<body class="ui-mobile-viewport ui-overlay-b">
+
+		<div data-role="internal" data-theme="b" id="reel" data-title="reel" data-url="reel" tabindex="0" class="ui-page ui-body-b ui-page-header-fixed ui-page-footer-fixed" style="min-height: 380px; padding-top: 65px; padding-bottom: 43px; ">
+
+	<div data-role="header" data-id="myHeader" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner">
+
+	<div data-role="navbar" class="nav-custom-icons ui-navbar" role="navigation"> 
+
+	<ul class="ui-grid-d">
+
+		<li class="ui-block-a">
+
+			<a href="http://socktan/reel" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-a" id="reel-link" title="reel" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">reel</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-b">
+
+			<a href="./test_files/test.html" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-a" id="jquery-link" title="jquery" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">jquery</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-c">
+
+			<a href="http://socktan/home" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top" id="home-link" title="about" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">about</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-d">
+
+			<a href="http://socktan/html5" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top" id="html5-link" title="html5" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">html5</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-e">
+
+			<a href="http://socktan/talk" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-a ui-btn-inline ui-btn-icon-top" id="talk-link" title="talk" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="a" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">talk</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+	</ul>
+
+</div><!-- // navbar -->
+</div><!-- // header -->
+	<div data-role="content" class="ui-content" role="main">
+	
+		<ul data-role="listview" data-inline="true" class="ui-listview">
+		
+			<li class="ui-li ui-li-static ui-body-b">
+			
+				<h2 class="ui-li-heading">Recent Work in the Web Stack</h2>
+			
+				<p class="ui-li-desc">A selection of our recent work.</p>
+				
+			</li>
+
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://connects.anthem.com/" title="Usability redesign for Anthem/BlueCross/BlueShield" class="ui-link-inherit">
+				
+					<img src="./test_files/blue-cross.png" class="portfolio ui-li-thumb" alt="Usability redesign for Anthem/BlueCross/BlueShield">
+
+					<h3 class="ui-li-heading">Usability Redesign for Anthem/BlueCross/BlueShield</h3>
+
+					<p class="ui-li-desc">Anthem wanted to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://www.htcnaunitedstates.com/mobile/rezound/" title="jQuery Mobile Site for HTC ReZound with Beats Audio" class="ui-link-inherit">
+				
+					<img src="./test_files/htc-rezound-96x96.jpg" class="portfolio ui-li-thumb" alt="jQuery Mobile Site for HTC ReZound with Beats Audio">
+
+					<h3 class="ui-li-heading">jQuery Mobile Site for HTC ReZound with Beats Audio</h3>
+
+					<p class="ui-li-desc">HTC introduced its Verizon ReZound handset and wanted a mobile site to show off the phone, on the phone. We customized a jQuery Mobile Framework site and threw in some cool extras. Like a 360 view of the phone that's rotated with the touch screen.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="https://www.facebook.com/bareescentuals?sk=app_185852401487880" title="Asynchronous HTML5 Video Facebook App for Bare Escentuals Cosmetics - Be a Force of Beauty�" class="ui-link-inherit">
+				
+					<img src="./test_files/be-96x96.jpg" class="portfolio ui-li-thumb" alt="Asynchronous HTML5 Video Facebook App for Bare Escentuals Cosmetics - Be a Force of Beauty">
+
+					<h3 class="ui-li-heading"> Asynchronous HTML5 Video Facebook App for Bare Escentuals Cosmetics, Be a Force of Beauty™</h3>
+
+					<p class="ui-li-desc">Bare Escentuals Cosmetics needed a Facebook app that would tie in with their Be a Force of Beauty™. With seven video segments, it made 
+					sense to build a video channel. We sezied the opportunity to use the built-in video capabilities of the new browsers.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+<!--
+
+			<li>
+		
+				<a href="http://www.facebook.com/htcusa?sk=app_198165743591272" title="Facebook App for HTC ReZound with Beats Audio">
+				
+					<img src="/img/htc-rezound-fb-96x96.jpg" class="portfolio" alt="Facebook App for HTC ReZound with Beats Audio" />
+
+					<h3>Facebook App for HTC ReZound with Beats Audio</h3>
+
+					<p>HTC introduced its Rezound handset and wanted a mobile site to show off the phone, on the phone. We customized a 
+
+					jQuery Mobile Framework site and threw in some cool extras. Like a 360 view of the phone that's rotated with the touch screen.</p>
+			
+				</a>
+
+			</li>
+
+-->
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://www.gametrailers.com/netstorage/mobile" title="jQuery Mobile Site for GameTrailers.com" class="ui-link-inherit">
+				
+					<img src="./test_files/gt-mobile-reviews-96x96.png" class="portfolio ui-li-thumb" alt="jQuery Mobile Site for GameTrailers.com">
+
+					<h3 class="ui-li-heading">jQuery Mobile Site for GameTrailers.com</h3>
+
+					<p class="ui-li-desc">MTV Networks Enterntainment division wanted to spruce up their mobile presence ahead of the 2011 Electronics Entertainment Expo. 
+					Solution: rapid deployment of a jQuery Mobile Framework version of their site.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://bm.spike.com/" title="Captain Morgan Rum" class="ui-link-inherit">
+				
+					<img src="./test_files/captain-morgan-96x96.jpg" class="portfolio ui-li-thumb" alt="Captain Morgan Rum">
+
+					<h3 class="ui-li-heading">JavaScript port of a flash site for Captain Morgan's Rum Bracket Master Challenge</h3>
+
+					<p class="ui-li-desc">Captain Morgan's Rum annual Bracket Master Challenge had been executed with a Flash kit. We took that experience and recreated it in JavaScript, CSS, and HTML.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://www.kaboose.com/" title="Disney Family Kaboose.com" class="ui-link-inherit">
+				
+					<img src="./test_files/disney-family-96x96.png" class="portfolio ui-li-thumb" alt="Disney Family Kaboose.com">
+
+					<h3 class="ui-li-heading">Disney Family Kaboose.com</h3>
+
+					<p class="ui-li-desc">Right around the time the iPad came out, people at Disney Family.com started to realize they were going to 
+					have to do something about their Flash-driven content. We were able to reverse-engineer the "feature carousel" 
+					that sits in the center well of the kaboose.com home page. The seamless transition was accomplished using 
+					the YUI library.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+			
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+
+				<a href="http://s3.socktan.com/images/portfolio/medium/imagz.jpg" title="Image Direct" class="ui-link-inherit">
+				
+					<img src="./test_files/imagz.jpg" class="portfolio ui-li-thumb" alt="Image Direct">
+
+					<h3 class="ui-li-heading">Image Direct</h3>
+
+					<p class="ui-li-desc">Image Direct partners with Fortune 500 companies in packaged goods, financial services, technology, and telecommunications industries to create high-response direct marketing programs.</p>
+
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+
+				<a href="http://s3.socktan.com/images/portfolio/medium/physicalmag.jpg" title="Physical Magazine" class="ui-link-inherit">
+				
+					<img src="./test_files/physicalmag.jpg" class="portfolio ui-li-thumb" alt="Physical Magazine">
+
+					<h3 class="ui-li-heading">Physical Magazine</h3>
+
+					<p class="ui-li-desc">Physical debuted as a monthly in January 2000, and has been reaching increasing numbers of sports nutrition and fitness enthusiasts ever since.</p>
+
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+
+				<a href="http://s3.socktan.com/images/portfolio/medium/welcomebiz.jpg" title="Welcome Business USA" class="ui-link-inherit">
+				
+					<img src="./test_files/welcomebiz.jpg" class="portfolio ui-li-thumb" alt="Welcome Business USA">
+
+					<h3 class="ui-li-heading">Welcome Business USA</h3>
+
+					<p class="ui-li-desc">A multi-channel marketing effort that hits new business owners after they open their doors.</p>
+					
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+
+				<a href="http://s3.socktan.com/images/portfolio/medium/zoobooks.jpg" title="Zoobooks" class="ui-link-inherit">
+				
+					<img src="./test_files/zoobooks.jpg" class="portfolio ui-li-thumb" alt="Zoobooks">
+
+					<h3 class="ui-li-heading">Zoobooks</h3>
+
+					<p class="ui-li-desc">Zoobooks is a monthly magazine  for children. Each issue covers a different animal with pictures, educational diagrams and facts.</p>
+					
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+		
+				<a href="http://s3.socktan.com/images/portfolio/medium/cardservice.jpg" title="Cardservice International" class="ui-link-inherit">
+				
+					<img src="./test_files/cardservice.jpg" class="portfolio ui-li-thumb" alt="Cardservice International">
+
+					<h3 class="ui-li-heading">Cardservice International</h3>
+
+					<p class="ui-li-desc">An established leader in the transaction processing industry.</p>
+			
+				</a>
+
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+
+			<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text">
+
+				<a href="http://s3.socktan.com/images/portfolio/medium/earlscheib.jpg" title="Earl Scheib" class="ui-link-inherit">
+				
+					<img src="./test_files/earlscheib.jpg" class="portfolio ui-li-thumb" alt="Earl Scheib">
+
+					<h3 class="ui-li-heading">Earl Scheib</h3>
+
+					<p class="ui-li-desc">Offers auto paint jobs, warranties, and fleet painting for cars, trucks and vans.</p>
+					
+				</a>
+			
+			</div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		
+		</ul>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="myFooter" data-theme="b" class="ui-footer ui-bar-b ui-footer-fixed slideup" role="contentinfo">
+
+	<h4 class="ui-title" role="heading" aria-level="1">socktan.digital.media();</h4>
+
+</div><!-- // footer -->
+</div>
+		<script type="application/javascript" async="" src="./test_files/ga.js"></script><script type="application/javascript" src="./test_files/jquery-1.7.2.min.js"></script>
+
+		<script type="application/javascript" src="./test_files/core.js"></script>
+
+		
+		<script type="application/javascript" src="./test_files/jquery.mobile-1.1.0.min.js"></script>
+
+	
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div><div data-role="internal" data-theme="b" id="html5" data-title="html5" data-url="/html5" data-external-page="true" tabindex="0" class="ui-page ui-body-b ui-page-header-fixed ui-page-footer-fixed">
+
+	<div data-role="header" data-id="myHeader" data-position="fixed" class="ui-header-fixed slideup">
+
+	<div data-role="navbar" class="nav-custom-icons ui-navbar" role="navigation"> 
+
+	<ul class="ui-grid-d">
+
+		<li class="ui-block-a">
+
+			<a href="http://socktan/reel" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="reel-link" title="reel" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">reel</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-b">
+
+			<a href="./test_files/test.html" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="jquery-link" title="jquery" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">jquery</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-c">
+
+			<a href="http://socktan/home" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="home-link" title="about" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">about</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-d">
+
+			<a href="http://socktan/html5" class="about ui-nav-btn ui-state-persist ui-btn-active ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="html5-link" title="html5" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">html5</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-e">
+
+			<a href="http://socktan/talk" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="talk-link" title="talk" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">talk</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+	</ul>
+
+</div><!-- // navbar -->
+</div><!-- // header -->
+	<div data-role="content">
+		
+		<img src="./test_files/html5.png" class="portfolio" alt="html5 socktan">
+	
+		<h2>HTML5</h2>
+
+		<p>So, chances are, by this point you've heard of HTML5. That's good, even though you 
+		may not really know why. html5 isn't really so much a single piece of technology, but 
+		rather three components that can work independently of one another. Together, they pretty 
+		much eliminate the need for third-party browser plugins like Flash and Java.</p>
+			
+		<div data-role="collapsible" data-collapsed="false" class="ui-collapsible"><h3 class="ui-collapsible-heading"><a href="http://socktan/reel#" class="ui-collapsible-heading-toggle ui-btn ui-btn-up-b ui-fullsize ui-btn-icon-left ui-corner-top ui-corner-bottom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="plus" data-iconpos="left" data-theme="null" data-mini="false"><span class="ui-btn-inner ui-corner-top ui-corner-bottom"><span class="ui-btn-text">HTML5 Video<span class="ui-collapsible-heading-status"> click to collapse contents</span></span><span class="ui-icon ui-icon-shadow ui-icon-minus">&nbsp;</span></span></a></h3><div class="ui-collapsible-content" aria-hidden="false">
+
+			
+
+			<p>The new <code>&lt;video&gt;</code> tag in html5 permits web browsers to natively 
+			render video objects. Its arrival is long overdue and the prominence of its absence 
+			accounts for the popularity of Adobe's Flash plugin.</p>
+			
+			<p>As it turns out, implementing this technology is daunting. There are numerous codecs 
+			for both the video and audio streams. Each platform has it's own quirks and 
+			each browser exhibits its own and aberrant behavior. Including mobile devices, the 
+			complexity becomes quite daunting.</p>
+
+			<div style="text-align:center;">
+			
+				<video width="80%" poster="/test/movie.png" preload="preload" controls="controls" tabindex="0">
+
+					<source src="/test/movie.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
+
+					<source src="/test/movie.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+
+					<source src="/test/movie.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+
+					Video tag not supported. Download the video <a href="http://socktan/test/movie.webm" class="ui-link">here</a>.
+
+				<video>
+			
+			</video></video></div>
+		
+		</div></div>
+	
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="myFooter" data-theme="b" class="ui-footer-fixed slideup">
+
+	<h4>socktan.digital.media();</h4>
+
+</div><!-- // footer -->
+</div><div data-role="internal" data-theme="b" id="talk" data-title="talk" data-url="/talk" data-external-page="true" tabindex="0" class="ui-page ui-body-b ui-page-header-fixed ui-page-footer-fixed">
+
+	<div data-role="header" data-id="myHeader" data-position="fixed" class="ui-header-fixed slideup">
+
+	<div data-role="navbar" class="nav-custom-icons ui-navbar" role="navigation"> 
+
+	<ul class="ui-grid-d">
+
+		<li class="ui-block-a">
+
+			<a href="http://socktan/reel" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="reel-link" title="reel" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">reel</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-b">
+
+			<a href="./test_files/test.html" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="jquery-link" title="jquery" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">jquery</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-c">
+
+			<a href="http://socktan/home" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="home-link" title="about" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">about</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-d">
+
+			<a href="http://socktan/html5" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="html5-link" title="html5" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">html5</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-e">
+
+			<a href="http://socktan/talk" class="about ui-nav-btn ui-state-persist ui-btn-active ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="talk-link" title="talk" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">talk</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+	</ul>
+
+</div><!-- // navbar -->
+</div><!-- // header -->
+	<div data-role="content">
+
+		<p><a href="tel:1-424-242-9323" class="ui-link">(424)&nbsp;242-WEB3&nbsp;(9323)</a></p>
+
+		<p><a href="sms:1-424-242-9323" class="ui-link">Send us a text message.</a></p>
+
+		<p><a href="mailto:info@socktan.com" class="ui-link">info@socktan.com</a></p>
+		
+		<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+
+			<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical"><div role="heading" class="ui-controlgroup-label">About:</div><div class="ui-controlgroup-controls">
+
+			   
+
+			   <div class="ui-checkbox"><label for="checkbox-1" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-left ui-checkbox-off ui-corner-top"><span class="ui-btn-inner ui-corner-top"><span class="ui-btn-text">Mobile Web</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span></span></label><input type="checkbox" name="checkbox-1" id="checkbox-1" class="custom"></div>
+
+			   
+
+			   <div class="ui-checkbox"><label for="checkbox-2" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner"><span class="ui-btn-text">Facebook Apps</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span></span></label><input type="checkbox" name="checkbox-2" id="checkbox-2" class="custom"></div>
+
+			   
+
+			   <div class="ui-checkbox"><label for="checkbox-3" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-left ui-checkbox-off"><span class="ui-btn-inner"><span class="ui-btn-text">HTML5</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span></span></label><input type="checkbox" name="checkbox-3" id="checkbox-3" class="custom"></div>
+
+			   
+
+			   <div class="ui-checkbox"><label for="checkbox-4" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="checkbox-off" data-theme="b" class="ui-btn ui-btn-up-b ui-btn-icon-left ui-checkbox-off ui-corner-bottom ui-controlgroup-last"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last"><span class="ui-btn-text">JavaScript</span><span class="ui-icon ui-icon-checkbox-off ui-icon-shadow">&nbsp;</span></span></label><input type="checkbox" name="checkbox-4" id="checkbox-4" class="custom"></div>
+
+			   
+
+		    </div></fieldset>
+
+		</div>
+
+		<form action="http://socktan/reel#" method="post" id="contactform">
+
+			<div data-role="fieldcontain" class="ui-hide-label ui-field-contain ui-body ui-br">
+
+				<label for="username" class="ui-input-text">Your name</label>
+
+				<input id="username" name="username" value="" placeholder="Your name" class="ui-input-text ui-body-b ui-corner-all ui-shadow-inset">
+
+			</div>
+			
+			<div data-role="fieldcontain" class="ui-hide-label ui-field-contain ui-body ui-br">
+
+				<label for="email" class="ui-input-text">Your e-mail</label>
+
+				<input type="email" id="email" name="email" value="" placeholder="Your e-mail" class="ui-input-text ui-body-b ui-corner-all ui-shadow-inset">
+
+			</div>
+			
+			<div data-role="fieldcontain" class="ui-hide-label ui-field-contain ui-body ui-br">
+			
+				<label for="telephone" class="ui-input-text">Your phone number</label>
+
+				<input type="tel" id="telephone" name="telephone" value="" placeholder="Your phone number" class="ui-input-text ui-body-b ui-corner-all ui-shadow-inset">
+
+			</div>
+			
+				<div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="b" data-inline="false" data-mini="false" class="ui-btn ui-btn-up-b ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Submit</span></span><button type="submit" class="ui-btn-hidden" aria-disabled="false">Submit</button></div>
+			
+		</form>
+		
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="myFooter" data-theme="b" class="ui-footer-fixed slideup">
+
+	<h4>socktan.digital.media();</h4>
+
+</div><!-- // footer -->
+</div><div data-role="internal" data-theme="b" id="jquery" data-title="jquery" data-url="/jquery" data-external-page="true" tabindex="0" class="ui-page ui-body-b ui-page-header-fixed ui-page-footer-fixed ui-page-active" style="min-height: 343px; padding-bottom: 62px; ">
+
+	<!-- // header -->
+	<div data-role="content">
+
+		<h1>jQuery Mobile Framework</h1>
+		
+		<h3>6.8 Billion people<br>5.3 Billion active mobile subscriptions</h3>
+
+		<h2>10+ billion web-enabled mobiles by 2013</h2>
+
+		<img src="./test_files/jquery-mobile.png" alt="jQuery Mobile Framework">
+			
+		<blockquote cite="./test_files/JQuery">
+			jQuery is a fast, concise, JavaScript Library that simplifies how you traverse HTML documents, handle events, perform animations, and add Ajax interactions to your web pages. jQuery is designed to change the way that you write JavaScript.
+		</blockquote>
+
+	</div>
+
+	<!-- // footer -->
+<div data-role="header" data-id="myHeader" data-position="fixed" class="ui-header-fixed slideup">
+
+	<div data-role="navbar" class="nav-custom-icons ui-navbar" role="navigation"> 
+
+	<ul class="ui-grid-d">
+
+		<li class="ui-block-a">
+
+			<a href="http://socktan/reel" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-btn-active" id="reel-link" title="reel" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">reel</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-b">
+
+			<a href="./test_files/test.html" class="about ui-nav-btn ui-state-persist ui-btn-active ui-btn ui-btn-inline ui-btn-icon-top ui-btn-up-b" id="jquery-link" title="jquery" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">jquery</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-c">
+
+			<a href="http://socktan/home" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-btn-active" id="home-link" title="about" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">about</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-d">
+
+			<a href="http://socktan/html5" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-btn-active" id="html5-link" title="html5" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">html5</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-e">
+
+			<a href="http://socktan/talk" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top ui-btn-active" id="talk-link" title="talk" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">talk</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+	</ul>
+
+</div><!-- // navbar -->
+</div><div data-role="footer" data-position="fixed" data-id="myFooter" data-theme="b" class="ui-footer-fixed slideup">
+
+	<h4>socktan.digital.media();</h4>
+
+</div></div><div data-role="internal" data-theme="b" id="Home" data-title="Home" data-url="/home" data-external-page="true" tabindex="0" class="ui-page ui-body-b ui-page-header-fixed ui-page-footer-fixed">
+
+	<div data-role="header" data-id="myHeader" data-position="fixed" class="ui-header-fixed slideup">
+
+	<div data-role="navbar" class="nav-custom-icons ui-navbar" role="navigation"> 
+
+	<ul class="ui-grid-d">
+
+		<li class="ui-block-a">
+
+			<a href="http://socktan/reel" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="reel-link" title="reel" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">reel</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-b">
+
+			<a href="./test_files/test.html" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="jquery-link" title="jquery" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">jquery</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-c">
+
+			<a href="http://socktan/home" class="about ui-nav-btn ui-state-persist ui-btn-active ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="home-link" title="about" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">about</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-d">
+
+			<a href="http://socktan/html5" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="html5-link" title="html5" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">html5</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+		<li class="ui-block-e">
+
+			<a href="http://socktan/talk" class="about ui-nav-btn ui-state-persist ui-btn ui-btn-up-b ui-btn-inline ui-btn-icon-top" id="talk-link" title="talk" data-prefetch="true" data-ajax="true" data-rel="internal" data-icon="custom" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-iconpos="top" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">talk</span><span class="ui-icon ui-icon-custom ui-icon-shadow">&nbsp;</span></span></a>
+
+		</li>
+
+	</ul>
+
+</div><!-- // navbar -->
+</div><!-- // header -->
+	<div data-role="content">
+
+		<h1>socktan</h1>
+
+		<p>Socktan designs and builds original web sites for small businesses, non-profits, and other organizations. 
+
+		We also count artists and business professionals among our clients.</p>
+
+		<p>Socktan operates in the sizable gap left between the amateur design shop and the larger corporate 
+
+		agencies. Our projects might be a single-page brochure web site or a complex database-driven commerce 
+
+		or social media site. We take pride in being knowledgable and friendly professionals. Our clients 
+
+		love us and they never hesitate to recommend our work.</p>
+
+		<p>Our clients include startups and blue chip businesses alike. We keep on top of new technologies. Mind you, that's not an easy job.</p>
+
+		<p>Fortunately, we love our work. Actually, it's a very exciting time for everyone working with web technology.</p>
+
+		<p>Socktan is a group of skilled digital artisans working together to provide web-centric professional 
+
+		services. We're based in the greater Los Angeles metropolitan area. We take care of your "Internet Presence" so 
+
+		you can focus on running your business. Our aim is to aid our clients in their effort to communicate 
+
+		a message to their audience. Whether that audience is a customer, a client, or the public at large, 
+
+		businesses without web-presence are becoming an endangered species. Customers are using the 
+
+		web to find you. Trends like social media and web mobility are becoming essential to surviving in the 
+
+		marketplace. Doing business on the web has never been more affordable. And the penalty for avoiding 
+
+		it has never been greater.</p>
+
+		<h2>So, why socktan?</h2>
+
+		<p>Doing business on the Internet, it's important to recognize the utility of having a short, 
+
+		memorable domain name. We actually came up with the domain name first, then filed our DBA based on that. A compound 
+
+		noun, composed of two monosyllabic and easily recognizable words, is a recipe for a great domain name. 
+
+		It's memorable, and having a dot-com is a nice bonus!</p>
+
+	</div>
+
+	<div data-role="footer" data-position="fixed" data-id="myFooter" data-theme="b" class="ui-footer-fixed slideup">
+
+	<h4>socktan.digital.media();</h4>
+
+</div><!-- // footer -->
+</div></body></html>
