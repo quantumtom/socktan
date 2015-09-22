@@ -1,81 +1,47 @@
 <div data-role="header" data-id="myHeader">
 
-	<div data-role="navbar" class="nav-custom-icons"> 
+    <div data-role="navbar" class="nav-custom-icons">
 
-		<ul>
+        <ul>
 
-			<!-- Home/About -->
-		
-			<li>
+            <!-- Home/About -->
 
-				<a 
-				href="/home" 
-				class="home ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/home.php") echo __UIBA__; ?>" 
-				data-theme="a" 
-				id="homeLink" 
-				title="home" 
-				data-icon="custom">home</a>
+            <li>
+                <a href="/home.php" class="home ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/home.php") echo __UIBA__; ?>"
+                   data-theme="a" id="homeLink" title="home" data-icon="custom">home</a>
+            </li>
 
-			</li>
+            <!-- Reel -->
 
-			<!-- Reel -->
-		
-			<li>
+            <li>
+                <a href="/reel.php" class="reel ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/reel.php") echo __UIBA__; ?>"
+                   data-theme="a" id="reelLink" title="reel" data-icon="custom">reel</a>
+            </li>
 
-				<a 
-				href="/reel" 
-				class="reel ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/reel.php") echo __UIBA__; ?>" 
-				data-theme="a" 
-				id="reelLink" 
-				title="reel" 
-				data-icon="custom">reel</a>
+            <!-- Tweets -->
 
-			</li>
+            <li>
+                <a href="/tweets.php" class="tweets ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/tweets.php") echo __UIBA__; ?>"
+                   data-theme="a" id="tweetsLink" title="tweets" data-icon="custom">tweets</a>
+            </li>
 
-			<!-- Tweets -->
-		
-			<li>
+            <!-- HTML5 -->
 
-				<a 
-				href="/tweets" 
-				class="tweets ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/tweets.php") echo __UIBA__; ?>" 
-				data-theme="a" 
-				id="tweetsLink" 
-				title="tweets" 
-				data-icon="custom">tweets</a>
+            <li>
+                <a href="/html5.php" class="html5 ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/html5.php") echo __UIBA__; ?>"
+                   data-theme="a" id="htmlLink" title="html5" data-icon="custom">html5</a>
+            </li>
 
-			</li>
+            <!-- Talk -->
 
-			<!-- HTML5 -->
-		
-			<li>
+            <li>
+                <a href="/talk.php" class="talk ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/talk.php") echo __UIBA__; ?>"
+                   data-theme="a" id="talkLink" title="talk" data-icon="custom">talk</a>
+            </li>
 
-				<a 
-				href="/html5" 
-				class="html5 ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/html5.php") echo __UIBA__; ?>" 
-				data-theme="a" 
-				id="htmlLink" 
-				title="html5" 
-				data-icon="custom">html5</a>
+        </ul>
 
-			</li>
+    </div>
+    <!-- // navbar -->
 
-			<!-- Talk -->
-		
-			<li>
-
-				<a 
-				href="/talk" 
-				class="talk ui-nav-btn<?php if ($_SERVER["SCRIPT_NAME"] == "/talk.php") echo __UIBA__; ?>" 
-				data-theme="a" 
-				id="talkLink" 
-				title="talk" 
-				data-icon="custom">talk</a>
-
-			</li>
-
-		</ul>
-
-	</div><!-- // navbar -->
-	
 </div><!-- // header -->

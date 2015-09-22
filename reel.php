@@ -148,9 +148,9 @@
 					
 					<li>
 
-						<a href="http://s3.socktan.com/images/portfolio/medium/imagz.jpg" title="Image Direct">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/imagz.jpg" title="Image Direct">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/imagz.jpg" class="portfolio" alt="Image Direct" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/imagz.jpg" class="portfolio" alt="Image Direct" />
 
 							<h3>Image Direct</h3>
 
@@ -162,9 +162,9 @@
 
 					<li>
 
-						<a href="http://s3.socktan.com/images/portfolio/medium/physicalmag.jpg" title="Physical Magazine">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/physicalmag.jpg" title="Physical Magazine">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/physicalmag.jpg" class="portfolio" alt="Physical Magazine" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/physicalmag.jpg" class="portfolio" alt="Physical Magazine" />
 
 							<h3>Physical Magazine</h3>
 
@@ -176,9 +176,9 @@
 
 					<li>
 
-						<a href="http://s3.socktan.com/images/portfolio/medium/welcomebiz.jpg" title="Welcome Business USA">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/welcomebiz.jpg" title="Welcome Business USA">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/welcomebiz.jpg" class="portfolio" alt="Welcome Business USA" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/welcomebiz.jpg" class="portfolio" alt="Welcome Business USA" />
 
 							<h3>Welcome Business USA</h3>
 
@@ -190,9 +190,9 @@
 
 					<li>
 
-						<a href="http://s3.socktan.com/images/portfolio/medium/zoobooks.jpg" title="Zoobooks">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/zoobooks.jpg" title="Zoobooks">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/zoobooks.jpg" class="portfolio" alt="Zoobooks" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/zoobooks.jpg" class="portfolio" alt="Zoobooks" />
 
 							<h3>Zoobooks</h3>
 
@@ -204,9 +204,9 @@
 
 					<li>
 				
-						<a href="http://s3.socktan.com/images/portfolio/medium/cardservice.jpg" title="Cardservice International">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/cardservice.jpg" title="Cardservice International">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/cardservice.jpg" class="portfolio" alt="Cardservice International" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/cardservice.jpg" class="portfolio" alt="Cardservice International" />
 
 							<h3>Cardservice International</h3>
 
@@ -218,9 +218,9 @@
 
 					<li>
 
-						<a href="http://s3.socktan.com/images/portfolio/medium/earlscheib.jpg" title="Earl Scheib">
+						<a href="https://s3.amazonaws.com/socktan/images/portfolio/medium/earlscheib.jpg" title="Earl Scheib">
 						
-							<img src="http://s3.socktan.com/images/portfolio/small/earlscheib.jpg" class="portfolio" alt="Earl Scheib" />
+							<img src="https://s3.amazonaws.com/socktan/images/portfolio/small/earlscheib.jpg" class="portfolio" alt="Earl Scheib" />
 
 							<h3>Earl Scheib</h3>
 
@@ -237,12 +237,8 @@
 			<?php include($_SERVER['DOCUMENT_ROOT']."/include/footer.php"); ?>
 
 		</div>
-	
-		<script type="text/javascript" src="/js/jquery/jquery-1.7.2.min.js"></script>
 
-		<script type="text/javascript" src="/js/webkit/core.js"></script>
-
-		<script type="text/javascript" src="/js/jquery/jquery.mobile-1.1.0.min.js"></script>
+		<?php include($_SERVER["DOCUMENT_ROOT"]."/include/js.php"); ?>
 
 	</body>
 

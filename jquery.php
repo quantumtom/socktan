@@ -41,12 +41,8 @@
 			<?php include($_SERVER['DOCUMENT_ROOT']."/include/footer.php"); ?>
 
 		</div>
-	
-		<script type="text/javascript" src="/js/jquery/jquery-1.7.2.min.js"></script>
 
-		<script type="text/javascript" src="/js/webkit/core.js"></script>
-
-		<script type="text/javascript" src="/js/jquery/jquery.mobile-1.1.0.min.js"></script>
+		<?php include($_SERVER["DOCUMENT_ROOT"]."/include/js.php"); ?>
 
 	</body>
 

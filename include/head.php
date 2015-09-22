@@ -2,7 +2,7 @@
 
 	<?php echo MakeTitleTag($pageTitle); ?>
 
-	<link type="text/css" rel="stylesheet" href="/css/jquery.mobile-1.1.0.min.css" />
+	<link type="text/css" rel="stylesheet" href="/js/jquerymobile/jquery.mobile-1.4.5.css" />
 
 	<link type="text/css" rel="stylesheet" href="/css/socktan.min.css" />
 
@@ -30,7 +30,7 @@
 
 <?php echo MakeMetaTag("keywords",$metaKeywords); ?>
 
-	<script type="text/javasscript" src="/js/twitter.widget.0.1.js"></script>
+	<script type="application/javascript" src="/js/twitter.widget.js"></script>
 
 	<!--
 
