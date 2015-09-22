@@ -6,7 +6,7 @@
 
 	<body>
 
-		<div data-role="page" id="<?php echo $pageTitle; ?>" data-theme="a">
+		<div data-role="page" id="<?php echo $pageTitle; ?>">
 
 			<?php include($_SERVER['DOCUMENT_ROOT']."/include/header.php"); ?>
 
