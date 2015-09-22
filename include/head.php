@@ -2,13 +2,11 @@
 
 	<?php echo MakeTitleTag($pageTitle); ?>
 
-	<link type="text/css" rel="stylesheet" href="/js/jquerymobile/jquery.mobile-1.4.5.css" />
+<!--	<link type="text/css" rel="stylesheet" href="/css/style.css" />-->
 
-	<link type="text/css" rel="stylesheet" href="/css/socktan.min.css" />
+	 <link type="text/css" rel="stylesheet" href="/js/jquerymobile/jquery.mobile-1.4.5.css" />
 
-	<link type="text/css" rel="stylesheet" href="/css/mobile-extra.css" />
-	
-	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	 <link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
 
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -29,8 +27,6 @@
 <?php echo MakeMetaTag("description",$metaDescription); ?>
 
 <?php echo MakeMetaTag("keywords",$metaKeywords); ?>
-
-	<script type="application/javascript" src="/js/twitter.widget.js"></script>
 
 	<!--
 

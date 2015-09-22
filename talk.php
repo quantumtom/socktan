@@ -68,8 +68,6 @@
 
 					</div>
 					
-<!--
-
 					<div data-role="fieldcontain" class="ui-hide-label" data-inline="true">
 
 						<label for="username">Your name</label>
@@ -93,8 +91,6 @@
 						<input type="tel" id="telephone" name="telephone" value="" placeholder="Your phone number" />
 
 					</div>
-					
-				-->
 					
 				</form>
 				
