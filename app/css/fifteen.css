@@ -1,0 +1,235 @@
+#theBox {
+
+	width:100%;
+	
+}
+
+#theBox > ul {
+
+	background-color:black;
+	
+	height:645px;
+
+	list-style-type:none;
+
+	padding:0px;
+
+	width:645px;
+
+}
+
+#theBox > ul > li {
+
+	background:url("/img/lion.png") no-repeat 0 0;
+
+	border-top:solid black 1px;
+
+	border-left:solid black 1px;
+
+	color:white;
+
+	float:left;
+
+	height:160px;
+	
+	width:160px;
+	
+}
+
+#theBox > ul > li.tile.zero {
+
+	background-position: 0 0;
+
+}
+
+#theBox > ul > li.tile.one {
+
+	background-position: -160px 0;
+
+}
+
+#theBox > ul > li.tile.two {
+
+	background-position: -320px 0;
+
+}
+
+#theBox > ul > li.tile.three {
+
+	background-position: -480px 0;
+
+}
+
+#theBox > ul > li.tile.four {
+
+	background-position: 0 -160px;
+
+}
+
+#theBox > ul > li.tile.five {
+
+	background-position: -160px -160px;
+
+}
+
+#theBox > ul > li.tile.six {
+
+	background-position: -320px -160px;
+
+}
+
+#theBox > ul > li.tile.seven {
+
+	background-position: -480px -160px;
+
+}
+
+#theBox > ul > li.tile.eight {
+
+	background-position: 0 -320px;
+
+}
+
+#theBox > ul > li.tile.nine {
+
+	background-position: -160px -320px;
+
+}
+
+#theBox > ul > li.tile.alpha {
+
+	background-position: -320px -320px;
+
+}
+
+#theBox > ul > li.tile.bravo {
+
+	background-position: -480px -320px;
+
+}
+
+#theBox > ul > li.tile.charlie {
+
+	background-position: 0 -480px;
+
+}
+
+#theBox > ul > li.tile.delta {
+
+	background-position: -160px -480px;
+
+}
+
+#theBox > ul > li.tile.echo {
+
+	background-position: -320px -480px;
+
+}
+
+#theBox > ul > li.tile.foxtrot {
+
+	background: white;
+	
+	color:black;
+
+}
+
+/*
+
+#theBox > ul > li:nth-child(1) {
+
+	background-position: 0 0;
+
+}
+
+#theBox > ul > li:nth-child(2) {
+
+	background-position: -160px 0;
+
+}
+
+#theBox > ul > li:nth-child(3) {
+
+	background-position: -320px 0;
+
+}
+
+#theBox > ul > li:nth-child(4) {
+
+	background-position: -480px 0;
+
+}
+
+#theBox > ul > li:nth-child(5) {
+
+	background-position: 0 -160px;
+
+}
+
+#theBox > ul > li:nth-child(6) {
+
+	background-position: -160px -160px;
+
+}
+
+#theBox > ul > li:nth-child(7) {
+
+	background-position: -320px -160px;
+
+}
+
+#theBox > ul > li:nth-child(8) {
+
+	background-position: -480px -160px;
+
+}
+
+#theBox > ul > li:nth-child(9) {
+
+	background-position: 0 -320px;
+
+}
+
+#theBox > ul > li:nth-child(10) {
+
+	background-position: -160px -320px;
+
+}
+
+#theBox > ul > li:nth-child(11) {
+
+	background-position: -320px -320px;
+
+}
+
+#theBox > ul > li:nth-child(12) {
+
+	background-position: -480px -320px;
+
+}
+
+#theBox > ul > li:nth-child(13) {
+
+	background-position: 0 -480px;
+
+}
+
+#theBox > ul > li:nth-child(14) {
+
+	background-position: -160px -480px;
+
+}
+
+#theBox > ul > li:nth-child(15) {
+
+	background-position: -320px -480px;
+
+}
+
+#theBox > ul > li:nth-child(16) {
+
+	background-position: -480px -480px;
+
+}
+
+*/
