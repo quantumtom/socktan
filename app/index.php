@@ -3,7 +3,6 @@
 <head>
     <?php echo MakeTitleTag($pageTitle); ?>
     <link type="text/css" rel="stylesheet" href="js/jquerymobile/jquery.mobile-1.4.5.css"/>
-    <link type="text/css" rel="stylesheet" href="css/mobile-extra.css"/>
     <link type="image/ico" rel="shortcut icon" href="favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -23,39 +22,37 @@
 </head>
 <body>
 <div data-role="page" id="<?php echo $pageTitle; ?>">
+    <!-- // header -->
     <div data-role="header">
-        <div data-role="navbar">
+        <div data-role="navbar" class="nav-custom-icons" data-grid="b">
             <ul>
                 <!-- Home -->
                 <li>
-                    <a href="home.php" class="home <?php if (IsScript("/home.php")) echo " ui-state-persist"; ?>"
-                       id="homeLink" title="home" data-icon="custom">home</a>
+                    <a href="home.php" class="<?php if (IsScript("/home.php")) echo " ui-state-persist"; ?>"
+                       id="homeLink" title="home" data-icon="info">home</a>
                 </li>
                 <!-- Reel -->
                 <li>
-                    <a href="reel.php" class="reel <?php if (IsScript("/reel.php")) echo " ui-state-persist"; ?>"
-                       id="reelLink" title="reel" data-icon="custom">reel</a>
+                    <a href="reel.php" class="<?php if (IsScript("/reel.php")) echo " ui-state-persist"; ?>"
+                       id="reelLink" title="reel" data-icon="star">reel</a>
                 </li>
                 <!-- Talk -->
                 <li>
-                    <a href="talk.php" class="talk <?php if (IsScript("/talk.php")) echo " ui-state-persist"; ?>"
-                       id="talkLink" title="talk" data-icon="custom">talk</a>
+                    <a href="talk.php" class="<?php if (IsScript("/talk.php")) echo " ui-state-persist"; ?>"
+                       id="talkLink" title="talk" data-icon="check">talk</a>
                 </li>
             </ul>
         </div>
         <!-- // navbar -->
     </div>
-    <!-- // header -->
     <div data-role="content">
         <?php GetContent($_SERVER["SCRIPT_NAME"]); ?>
     </div>
     <!-- // content -->
 
-    <!--<div data-role="footer" data-id="customFooter" data-position="fixed" data-tap-toggle="true">-->
-    <!---->
-    <!--	<h3>socktan.com</h3>-->
-    <!---->
-    <!--</div>-->
+    <div data-role="footer" class="nav-custom-icons" data-position="fixed" data-tap-toggle="true">
+
+    </div>
 
 </div>
 <!-- // page -->
