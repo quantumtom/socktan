@@ -1,5 +1,4 @@
 <?php
-use app\scriptName;
 
 switch ($_SERVER["SCRIPT_NAME"]) {
 	case "/reel.php":
@@ -14,13 +13,18 @@ switch ($_SERVER["SCRIPT_NAME"]) {
 		$metaDescription="Whether you are a human or a robot, we would love to hear from you (robots are often more interesting). We can get started on your project right away.";
 		$metaKeywords="javascript,venice,websites,web design,web development,twitter,json,ajax  ";
 		break;
-	default:
+    case "/home.php":
         $pageTitle="home";
         $pageDesc="Home";
         $metaDescription="Whether you are a human or a robot, we would love to hear from you (robots are often more interesting). We can get started on your project right away.";
         $metaKeywords="web designer,jquery,javascript,santa monica,websites,web sites,web development,ajax  ";
 		break;
-	}
+    default:
+        $pageTitle="about";
+        $pageDesc="About";
+        $metaDescription="Whether you are a human or a robot, we would love to hear from you (robots are often more interesting). We can get started on your project right away.";
+        $metaKeywords="web designer,jquery,javascript,santa monica,websites,web sites,web development,ajax  ";
+}
 
 /**
  * @param $tag_name
@@ -36,7 +40,7 @@ function MakeMetaTag($tag_name,$tag_content) {
  * @return string
  */
 function MakeTitleTag($pageTitle) {
-	$pageTitle = substr("Socktan.digital.media() - Venice, Cal - ".$pageTitle,0,65);
+	$pageTitle = substr("socktan * venice, cal - ".$pageTitle,0,65);
 	return "<title>".$pageTitle."</title>\n";
 }
 
