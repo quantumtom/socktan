@@ -52,5 +52,5 @@ function IsScript($scriptName) {
  *
  */
 function GetContent($scriptName) {
-    require('include' . $scriptName);
+    require('lib/views' . $scriptName);
 }
