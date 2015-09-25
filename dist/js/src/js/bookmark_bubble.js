@@ -152,6 +152,7 @@ google.bookmarkbubble.Bubble.prototype.showIfAllowedWhenLoaded =
  */
 google.bookmarkbubble.Bubble.prototype.setHashParameter = google.abstractMethod;
 
+
 /**
  * Whether the parameter is present in the location hash. As it is
  * unpredictable what hash scheme is to be used, this method must be

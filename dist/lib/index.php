@@ -65,6 +65,7 @@
 <!-- SHRIMPS -- ahem, I mean, "scripts." -->
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquery/jquery-1.11.3.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquerymobile/jquery.mobile-1.4.5.js"></script>
+<script type="application/javascript" src="js/bookmark_bubble.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/google.analytics.js"></script>
 </body>
 </html>
