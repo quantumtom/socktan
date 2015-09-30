@@ -80,6 +80,7 @@
         grunt.loadNpmTasks('grunt-contrib-htmlmin');
         grunt.loadNpmTasks('grunt-contrib-jshint');
         grunt.loadNpmTasks('grunt-contrib-watch');
+        grunt.loadNpmTasks('jshint-stylish');
 
         /**
          * Alias tasks
