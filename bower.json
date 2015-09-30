@@ -1,0 +1,24 @@
+{
+  "name": "socktan.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Socktan/socktan.com",
+  "authors": [
+    "quantumtom <cornyn@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "~4.0.3"
+  }
+}
