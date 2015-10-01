@@ -12,6 +12,15 @@
         grunt.initConfig({
             pkg: grunt.file.readJSON('package.json'),
             copy: {
+                php: {
+                    cwd: 'src',
+                    expand: true,
+                    src: [
+                        '*.php',
+                        'lib/**'
+                    ],
+                    dest: 'dist'
+                },
                 /**
                  * Copies original source from src/js to build/js/src/js for source map debugging.
                  */
@@ -60,9 +69,25 @@
                     files: [{
                         expand: true,
                         cwd: 'src/css',
-                        src: ['style.css'],
-                        dest: 'dist/css'
+                        src: [
+                            'style.css'
+                        ],
+                        dest: 'dist/css/style.css'
                     }]
+                }
+            },
+            htmlmin: {
+                dist: {
+                    options: {
+                        removeComments: true,
+                        collapseWhitespace: true
+                    },
+                    files: {
+                        'dist/home.html': 'src/home.html',
+                        'dist/reel.html': 'src/reel.html',
+                        'dist/talk.html': 'src/talk.html',
+                        'dist/twitter.html': 'src/twitter.html'
+                    }
                 }
             },
             jshint: {
@@ -126,6 +151,7 @@
             'clean',
             'cssmin',
             'copy:js',
+            'copy:other',
             'htmlmin'
         ]);
 
