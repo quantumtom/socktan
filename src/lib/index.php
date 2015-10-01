@@ -19,7 +19,6 @@
     <link rel="apple-touch-icon" sizes="72x72" href="/img/touch-icon-ipad.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="/img/touch-icon-iphone4.png" />
     -->
-    <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/bookmark_bubble.js"></script>
 </head>
 <body>
 <div data-role="page" id="<?php echo $pageTitle; ?>">
@@ -64,6 +63,7 @@
 </div>
 <!-- // page -->
 <!-- SHRIMPS -- ahem, I mean, "scripts." -->
+<script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/bookmark_bubble.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquery/jquery-1.11.3.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquerymobile/jquery.mobile-1.4.5.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/google.analytics.js"></script>

@@ -12,7 +12,44 @@
         grunt.initConfig({
             pkg: grunt.file.readJSON('package.json'),
             copy: {
-
+                /**
+                 * Copies original source from src/js to build/js/src/js for source map debugging.
+                 */
+                src: {
+                    files: [
+                        {
+                            cwd: 'src/js',
+                            expand: true,
+                            src: '*.js',
+                            dest: 'dist/js/src/js'
+                        }
+                    ]
+                },
+                other: {
+                    files: [
+                        {
+                            cwd: 'src',
+                            expand: true,
+                            src: [
+                                '.htaccess',
+                                'img/**',
+                                'cache.manifest',
+                                'favicon.ico'
+                            ],
+                            dest: 'dist/'
+                        }
+                    ]
+                },
+                js: {
+                    files: [
+                        {
+                            cwd: 'src/js',
+                            expand: true,
+                            src: '**',
+                            dest: 'dist/js'
+                        }
+                    ]
+                }
             },
             cssmin: {
                 options: {
@@ -80,7 +117,6 @@
         grunt.loadNpmTasks('grunt-contrib-htmlmin');
         grunt.loadNpmTasks('grunt-contrib-jshint');
         grunt.loadNpmTasks('grunt-contrib-watch');
-        grunt.loadNpmTasks('jshint-stylish');
 
         /**
          * Alias tasks
@@ -88,7 +124,9 @@
 
         grunt.registerTask('default', [
             'clean',
-            'cssmin'
+            'cssmin',
+            'copy:js',
+            'htmlmin'
         ]);
 
         grunt.registerTask('test', [

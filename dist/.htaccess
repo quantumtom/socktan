@@ -1,5 +1,4 @@
-DiretoryIndex home home.php
-
+DirectoryIndex home home.php
 # ######################################################################
 # # REWRITES                                                           #
 # ######################################################################
@@ -75,11 +74,6 @@ DiretoryIndex home home.php
 # subdomains for certain parts of your website.
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^([^\.]+)$ $1.php [NC,L]
-</IfModule>
-
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{HTTPS} !=on
