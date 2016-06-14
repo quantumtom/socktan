@@ -21,25 +21,21 @@
     -->
 </head>
 <body>
-<div data-role="page" id="<?php echo $pageTitle; ?>">
+<div data-role="page" id="{{ $pageTitle}}">
     <div data-role="header" data-id="header">
         <div data-role="navbar" class="nav-custom-icons" data-grid="c">
             <ul>
                 <li>
-                    <a href="../home.php" class="home<?php if (IsScript("/home.php")) echo " ui-state-persist"; ?>"
-                       id="homeLink" title="home" data-icon="home" data-theme="b">home</a>
+                    <a href="#home" class="home" id="homeLink" title="home" data-icon="home">home</a>
                 </li>
                 <li>
-                    <a href="../reel.php" class="reel<?php if (IsScript("/reel.php")) echo " ui-state-persist"; ?>"
-                       id="reelLink" title="reel" data-icon="star" data-theme="b">reel</a>
+                    <a href="#reel" class="reel" id="reelLink" title="reel" data-icon="star">reel</a>
                 </li>
                 <li>
-                    <a href="../twitter.php" class="twitter<?php if (IsScript("/twitter.php")) echo " ui-state-persist"; ?>"
-                       id="twitterLink" title="twitter" data-icon="info" data-theme="b">twitter</a>
+                    <a href="#twitter" class="twitter" id="twitterLink" title="twitter" data-icon="info">twitter</a>
                 </li>
                 <li>
-                    <a href="../talk.php" class="talk<?php if (IsScript("/talk.php")) echo " ui-state-persist"; ?>"
-                       id="talkLink" title="talk" data-icon="grid" data-theme="b">talk</a>
+                    <a href="#talk" class="talk" id="talkLink" title="talk" data-icon="grid">talk</a>
                 </li>
             </ul>
         </div>
@@ -52,9 +48,9 @@
     </div>
 
 </div>
-<!-- // page -->
-<script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquery/jquery-1.11.3.js"></script>
-<script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquerymobile/jquery.mobile-1.4.5.js"></script>
-<script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/google.analytics.js"></script>
+<!--This sets the baseUrl to the "scripts" directory, and
+    loads a script that will have a module ID of 'main'-->
+<script data-main="js/app" src="js/require.js"></script>
+
 </body>
 </html>

@@ -1,19 +1,19 @@
 <?php
 
 switch ($_SERVER["SCRIPT_NAME"]) {
-	case "/reel.php":
+	case "/reel.hbar":
 		$pageTitle="reel";
 		$pageDesc="Recent Work";
 		$metaDescription="We have been building websites for quite some time now. One of the drawbacks of that is many of our early works are no longer online. Fortunately, that is not true in every case.";
 		$metaKeywords="websites,web,web development,api,rest,twitter,json,ajax";
 		break;
-	case "/talk.php":
+	case "/talk.hbar":
 		$pageTitle="talk";
 		$pageDesc="Talk to Us";
 		$metaDescription="Whether you are a human or a robot, we would love to hear from you (robots are often more interesting). We can get started on your project right away.";
 		$metaKeywords="javascript,venice,websites,web design,web development,twitter,json,ajax  ";
 		break;
-    case "/home.php":
+    case "/home.hbar":
         $pageTitle="home";
         $pageDesc="Home";
         $metaDescription="Whether you are a human or a robot, we would love to hear from you (robots are often more interesting). We can get started on your project right away.";
