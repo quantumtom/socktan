@@ -22,48 +22,37 @@
 </head>
 <body>
 <div data-role="page" id="<?php echo $pageTitle; ?>">
-    <!-- // header -->
     <div data-role="header" data-id="header">
         <div data-role="navbar" class="nav-custom-icons" data-grid="c">
             <ul>
-                <!-- Home -->
                 <li>
                     <a href="../home.php" class="home<?php if (IsScript("/home.php")) echo " ui-state-persist"; ?>"
                        id="homeLink" title="home" data-icon="home" data-theme="b">home</a>
                 </li>
-                <!-- Reel -->
                 <li>
                     <a href="../reel.php" class="reel<?php if (IsScript("/reel.php")) echo " ui-state-persist"; ?>"
                        id="reelLink" title="reel" data-icon="star" data-theme="b">reel</a>
                 </li>
-                <!-- Twitter -->
                 <li>
                     <a href="../twitter.php" class="twitter<?php if (IsScript("/twitter.php")) echo " ui-state-persist"; ?>"
                        id="twitterLink" title="twitter" data-icon="info" data-theme="b">twitter</a>
                 </li>
-                <!-- Talk -->
                 <li>
                     <a href="../talk.php" class="talk<?php if (IsScript("/talk.php")) echo " ui-state-persist"; ?>"
                        id="talkLink" title="talk" data-icon="grid" data-theme="b">talk</a>
                 </li>
             </ul>
         </div>
-        <!-- // navbar -->
-
     </div>
     <div data-role="content">
         <?php GetContent($_SERVER["SCRIPT_NAME"]); ?>
     </div>
-    <!-- // content -->
-
     <div data-role="footer" data-id="footer">
         <h3>(technically) creative</h3>
     </div>
 
 </div>
 <!-- // page -->
-<!-- SHRIMPS -- ahem, I mean, "scripts." -->
-<script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/bookmark_bubble.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquery/jquery-1.11.3.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/jquerymobile/jquery.mobile-1.4.5.js"></script>
 <script type="application/javascript" src="https://s3.amazonaws.com/socktan/js/google.analytics.js"></script>

@@ -151,8 +151,7 @@
             'clean',
             'cssmin',
             'copy:js',
-            'copy:other',
-            'htmlmin'
+            'copy:other'
         ]);
 
         grunt.registerTask('test', [
