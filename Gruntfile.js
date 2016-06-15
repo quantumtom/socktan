@@ -12,12 +12,15 @@
         grunt.initConfig({
             pkg: grunt.file.readJSON('package.json'),
             copy: {
-                php: {
+                all: {
                     cwd: 'src',
                     expand: true,
                     src: [
-                        '*.php',
-                        'lib/**'
+                        '*.html',
+                        'js/*.js',
+                        'js/app/**/.js',
+                        'js/app/parts/*.hbar',
+                        'js/lib/**/*.js'
                     ],
                     dest: 'dist'
                 },
@@ -65,15 +68,10 @@
                     shorthandCompacting: false,
                     roundingPrecision: -1
                 },
-                dev: {
-                    files: [{
-                        expand: true,
-                        cwd: 'src/css',
-                        src: [
-                            'style.css'
-                        ],
-                        dest: 'dist/css/style.css'
-                    }]
+                dist: {
+                    files: {
+                        'dist/css/main.css': ['src/css/**/*.css']
+                    }
                 }
             },
             htmlmin: {
@@ -114,7 +112,7 @@
                         'Gruntfile.js'
                     ],
                     tasks: [
-                        'copy:dev'
+                        'copy:all'
                     ]
                 },
                 dist: {
@@ -150,8 +148,7 @@
         grunt.registerTask('default', [
             'clean',
             'cssmin',
-            'copy:js',
-            'copy:other'
+            'copy:all'
         ]);
 
         grunt.registerTask('test', [
