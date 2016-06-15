@@ -1,9 +1,7 @@
 require([
   'controllers/home',
   'app/router'
-], function (User, Home, Router) {
-
-  localStorage.users = JSON.stringify(users);
+], function (Home, Router) {
 
   Home.start();
 

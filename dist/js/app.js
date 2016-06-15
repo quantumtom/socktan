@@ -11,18 +11,18 @@ requirejs.config({
     // the jQuery file, relative to baseUrl.
     // Also, the path should NOT include
     // the '.js' file extension.
-    parts:          'app/parts',
     controllers:    'app/controllers',
     data:           'app/data',
     models:         'app/models',
+    parts:          'app/parts',
     views:          'app/views',
-    ga:             'lib/ga',
     bootstrap:      'lib/bootstrap',
-    twbs:           'lib/twbs',
-    jquery:         'lib/jquery',
+    ga:             'lib/ga',
     Handlebars:     'lib/handlebars',
+    hbar:           'lib/hbars',
+    jquery:         'lib/jquery',
     text:           'lib/text',
-    hbar:           'lib/hbars'
+    twbs:           'lib/twbs'
   },
   shim: {
     bootstrap: {

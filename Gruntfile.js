@@ -17,10 +17,8 @@
                     expand: true,
                     src: [
                         '*.html',
-                        'js/*.js',
-                        'js/app/**/.js',
-                        'js/app/parts/*.hbar',
-                        'js/lib/**/*.js'
+                        'js/**/*.js',
+                        'js/app/parts/*.hbar'
                     ],
                     dest: 'dist'
                 },
@@ -70,7 +68,7 @@
                 },
                 dist: {
                     files: {
-                        'dist/css/main.css': ['src/css/**/*.css']
+                        'dist/css/main.css': ['src/css/*.css']
                     }
                 }
             },
@@ -104,15 +102,13 @@
                 }
             },
             watch: {
-                dev: {
+                all: {
                     files: [
-                        'src/*.html',
-                        'src/css/*.css',
-                        'src/js/*.js',
+                        'src/**',
                         'Gruntfile.js'
                     ],
                     tasks: [
-                        'copy:all'
+                        'default'
                     ]
                 },
                 dist: {
