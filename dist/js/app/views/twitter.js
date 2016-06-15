@@ -1,18 +1,18 @@
-define(function() {
+define(function () {
 
-    function render() {
-        require(
-            [
-                'hbar!parts/twitter',
-                'data/twitter'
-            ], function (twitterPart, twitterData) {
-                var appDiv = document.getElementById('page-body');
+  function render() {
+    require(
+      [
+        'hbar!parts/twitter',
+        'data/twitter'
+      ], function (twitterPart, twitterData) {
+        var appDiv = document.getElementById('page-body');
 
-                appDiv.innerHTML = twitterPart(twitterData);
-            });
-    }
+        appDiv.innerHTML = twitterPart(twitterData);
+      });
+  }
 
-    return {
-        render:render
-    };
+  return {
+    render: render
+  };
 });

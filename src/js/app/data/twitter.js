@@ -1,7 +1,7 @@
 define('data/twitter', function () {
 
     var twitterData = {
-        title: 'Twitter Page',
+        title: 'Twitter',
         lead: '',
         body: ''
     };
