@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h3>{{title}}</h3>
+    </div>
+  </div>
+</div><!-- // .row -->
+<div class="row">
+  <div class="col-xs-12">
+    <p class="lead">{{lead}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="well">
+      {{#each body}}
+      <p>{{ this.prose }}</p>
+      {{/each}}
+    </div>
+  </div>
+</div><!-- // .row -->
