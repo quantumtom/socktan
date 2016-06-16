@@ -1,11 +1,20 @@
 define('app/router', ['jquery'], function () {
 
   var routes = [
-    {hash: '#about',    controller: 'about'},
-    {hash: '#reel',     controller: 'reel'},
-    {hash: '#talk',     controller: 'talk'},
-    {hash: '#twitter',  controller: 'twitter'}
+    {
+      hash: '#about',
+      controller: 'about'
+    },
+    {
+      hash: '#reel',
+      controller: 'reel'
+    },
+    {
+      hash: '#contact',
+      controller: 'contact'
+    }
   ];
+
   var defaultRoute = '#about';
   var currentHash = '';
 

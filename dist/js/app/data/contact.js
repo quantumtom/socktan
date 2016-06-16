@@ -1,11 +1,11 @@
-define('data/talk', function () {
+define('data/contact', function () {
 
-    var talkData = {
+    var contactData = {
         title: 'contact us',
         lead: '',
         body: 'Whether you are a human or a robot, we would love to hear from you (robots are often more ' +
         'interesting). We can get started on your project right away.'
     };
 
-    return talkData;
+    return contactData;
 });
