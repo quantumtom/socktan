@@ -1,5 +1,3 @@
-/* jshint undef: true, unused: true */
-
 (function () {
 
   'use strict';
@@ -65,6 +63,7 @@
       },
       cssmin: {
         options: {
+          sourceMap: true,
           shorthandCompacting: false,
           roundingPrecision: -1
         },
