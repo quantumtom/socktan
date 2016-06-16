@@ -1,18 +1,18 @@
-define('app/router', ['jquery'], function() {
+define('app/router', ['jquery'], function () {
 
   var routes = [
-    {hash: '#home',         controller: 'home'          },
-    {hash: '#reel',         controller: 'reel'          },
-    {hash: '#talk',         controller: 'talk'          },
-    {hash: '#twitter',      controller: 'twitter'       }
+    {hash: '#about',    controller: 'about'},
+    {hash: '#reel',     controller: 'reel'},
+    {hash: '#talk',     controller: 'talk'},
+    {hash: '#twitter',  controller: 'twitter'}
   ];
-  var defaultRoute = '#home';
+  var defaultRoute = '#about';
   var currentHash = '';
 
   function loadController(controllerName) {
-    $('#home-spinner').toggleClass('active');
+    $('#main-spinner').toggleClass('active');
 
-    require(['controllers/' + controllerName], function(controller) {
+    require(['controllers/' + controllerName], function (controller) {
       controller.start();
     });
   }
@@ -34,6 +34,6 @@ define('app/router', ['jquery'], function() {
   }
 
   return {
-    startRouting:startRouting
+    startRouting: startRouting
   };
 });

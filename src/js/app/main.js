@@ -1,9 +1,9 @@
 require([
-  'controllers/home',
+  'controllers/about',
   'app/router'
-], function (Home, Router) {
+], function (About, Router) {
 
-  Home.start();
+  About.start();
 
   Router.startRouting();
 });

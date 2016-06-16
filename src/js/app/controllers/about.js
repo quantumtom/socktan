@@ -1,7 +1,7 @@
-define(['views/home'], function(homeView){
+define(['views/about'], function(aboutView){
 
   function start() {
-    homeView.render();
+    aboutView.render();
   }
 
   return {
