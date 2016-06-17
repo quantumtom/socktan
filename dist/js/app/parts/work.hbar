@@ -11,12 +11,12 @@
       <div class="panel-heading" role="tab" id="heading{{ this.slug }}">
         <h4 class="panel-title">
           <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ this.slug }}"
-             aria-expanded="{{#if this.first}}true{{else}}false{{/if}}"
+             aria-expanded="true"
              aria-controls="collapse{{ this.slug }}">
             {{ this.title }}</a>
         </h4>
       </div>
-      <div id="collapse{{ this.slug }}" class="panel-collapse collapse{{#if this.first}} in{{/if}}"
+      <div id="collapse{{ this.slug }}" class="panel-collapse collapse in"
            role="tabpanel" aria-labelledby="heading{{ this.slug }}">
         <div class="panel-body">
           <img src="{{ this.image.url }}" alt="{{ this.title }}" class="img-responsive"/><br/>
