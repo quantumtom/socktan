@@ -1,7 +1,7 @@
 define('data/about', function () {
 
   var aboutData = {
-    title: 'about us',
+    title: 'about socktan',
     lead: '(technically) creative',
     body: [
       {
