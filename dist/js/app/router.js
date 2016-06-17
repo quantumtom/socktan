@@ -6,8 +6,8 @@ define('app/router', ['jquery'], function () {
       controller: 'about'
     },
     {
-      hash: '#reel',
-      controller: 'reel'
+      hash: '#work',
+      controller: 'work'
     },
     {
       hash: '#contact',

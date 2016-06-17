@@ -3,12 +3,12 @@ define(function () {
   function render() {
     require(
         [
-          'hbar!parts/reel',
-          'data/reel'
-        ], function (reelPart, reelData) {
+          'hbar!parts/work',
+          'data/work'
+        ], function (workPart, workData) {
           var appDiv = document.getElementById('page-body');
 
-          appDiv.innerHTML = reelPart(reelData);
+          appDiv.innerHTML = workPart(workData);
         });
   }
 

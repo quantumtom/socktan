@@ -1,7 +1,7 @@
-define(['views/reel'], function(reelView){
+define(['views/work'], function(workView){
 
     function start() {
-        reelView.render();
+        workView.render();
     }
 
     return {
