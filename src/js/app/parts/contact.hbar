@@ -2,14 +2,10 @@
   <h3>{{title}}</h3>
 </div>
 
-<p>
-
-</p><a href="https://www.quantumtom.com" class="btn btn-primary btn-sm" target="_blank">blog</a>
-<a href="https://github.com/quantumtom" class="btn btn-primary btn-sm" target="_blank">github</a>
-
+<p class="lead">
+  {{lead}}
 </p>
 
-<p class="lead">{{lead}}</p>
 <p>{{body}}</p>
 
 <form action=" " method="post" id="contact_form">
