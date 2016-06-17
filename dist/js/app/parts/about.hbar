@@ -1,28 +1,9 @@
-<div class="row">
-  <div class="col-xs-12">
-    <div class="page-header">
-      <h3>{{title}}</h3>
-    </div>
-  </div>
-</div><!-- // .row -->
-
-<div class="row">
-  <div class="col-xs-12">
-    <p class="lead">{{lead}}</p>
-  </div>
-</div><!-- // .row -->
-
-<div class="row">
-  <div class="col-xs-9">
-    <div class="well">
-      {{#each body}}
-        <p>{{ this.prose }}</p>
-      {{/each}}
-    </div>
-  </div>
-  <div class="col-xs-3">
-    <a href="img/calvin.jpg" target="_blank">
-      <img src="img/calvin.jpg" class="img-responsive" />
-    </a>
-  </div>
-</div><!-- // .row -->
+<div class="page-header">
+  <h3>{{title}}</h3>
+</div>
+<p class="lead">
+  {{lead}}
+</p>
+{{#each body}}
+  <p>{{ this.prose }}</p>
+{{/each}}

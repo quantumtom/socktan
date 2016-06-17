@@ -5,10 +5,6 @@ define('data/about', function () {
     lead: '(technically) creative',
     body: [
       {
-        prose: 'Whether you are a human or a robot, we would love to hear from you (robots are often more ' +
-        'interesting).'
-      },
-      {
         prose: 'Socktan designs and builds original web sites for small businesses, non-profits, and other ' +
         'organizations. We also count artists and business professionals among our clients.'
       },
