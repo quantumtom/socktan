@@ -1,10 +1,10 @@
-define(['views/work'], function(workView){
+define(['views/work'], function (workView) {
 
-    function start() {
-        workView.render();
-    }
+  function start() {
+    workView.render();
+  }
 
-    return {
-        start:start
-    };
+  return {
+    start: start
+  };
 });

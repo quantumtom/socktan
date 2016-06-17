@@ -11,7 +11,7 @@ define('data/about', function () {
     body: [
       {
         prose: 'Socktan designs and builds original web sites for small businesses, non-profits, and other ' +
-          'organizations. We also count artists and business professionals among our clients.'
+        'organizations. We also count artists and business professionals among our clients.'
       },
       {
         prose: 'We operate in the sizable gap left between the amateur design shop and the larger corporate agencies. ' +

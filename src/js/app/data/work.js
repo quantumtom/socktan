@@ -2,8 +2,8 @@ define('data/work', function () {
 
   var workData = {
     title: 'recent work',
-    bodyCopy:  'We have been building websites for quite some time now. One of the drawbacks of that is many ' +
-      'of our early works are no longer online. Fortunately, that is not always the case!',
+    bodyCopy: 'We have been building websites for quite some time now. One of the drawbacks of that is many ' +
+    'of our early works are no longer online. Fortunately, that is not always the case!',
     job: [
       {
         slug: 'Noaa',

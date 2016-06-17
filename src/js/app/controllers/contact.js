@@ -1,10 +1,10 @@
-define(['views/contact'], function(contactView){
+define(['views/contact'], function (contactView) {
 
-    function start() {
-        contactView.render();
-    }
+  function start() {
+    contactView.render();
+  }
 
-    return {
-        start:start
-    };
+  return {
+    start: start
+  };
 });

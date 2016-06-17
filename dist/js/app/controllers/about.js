@@ -1,10 +1,10 @@
-define(['views/about'], function(aboutView){
+define(['views/about'], function (aboutView) {
 
   function start() {
     aboutView.render();
   }
 
   return {
-    start:start
+    start: start
   };
 });
