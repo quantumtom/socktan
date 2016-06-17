@@ -4,9 +4,6 @@ var app = express();
 var compress = require('compression');
 
 app.use(compress());
-app.use(function(req, res) {
-  res.status(404).redirect('404.html');
-});
 app.use('/', express.static(__dirname + '/dist'));
 app.set('port', process.env.PORT || 5000);
 app.listen(app.get('port'), function() { console.log('listening');});
