@@ -105,7 +105,7 @@
       watch: {
         all: {
           files: [
-            'src/**',
+            'src/**/*',
             'Gruntfile.js'
           ],
           tasks: [

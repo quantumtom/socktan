@@ -6,10 +6,19 @@ define('data/work', function () {
     'of our early works are no longer online. Fortunately, that\'s not always the case!',
     job: [
       {
-        slug: 'Noaa',
+        slug: 'Ash',
         first: true,
+        title: 'Ash',
+        link: 'http://www.metapants.com',
+        caption: 'A \'living\' style guide for Bootstrap components implemented through Handlebars via RequireJS.',
+        image: {
+          url: 'img/vendors/bootstrap/logo-01.png'
+        }
+      },
+      {
+        slug: 'Noaa',
         title: 'Real-time satellite weather',
-        link: 'http://noaa.socktan.com',
+        link: 'http://www.ninjasparkle.com',
         caption: 'A fun little project animating a series of satellite weather images.',
         image: {
           url: 'https://s3.amazonaws.com/socktan/img/noaa-96x96.png'
@@ -30,7 +39,7 @@ define('data/work', function () {
       {
         slug: 'Htc',
         title: 'HTC ReZound with Beats Audio (mobile site)',
-        link: 'http://noaa.socktan.com',
+        link: 'http://www.webkitlab.com',
         caption: 'HTC introduced its Verizon ReZound handset and wanted a mobile site to ' +
         'show off the phone, on the phone. We customized a jQuery Mobile Framework site ' +
         'and threw in some cool extras. Like a 360 view of the phone that\'s rotated ' +

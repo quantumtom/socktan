@@ -28,6 +28,7 @@
             <div class="panel-body">
               <img src="{{ this.image.url }}" alt="{{ this.title }}" class="img-responsive" /><br />
               <p>{{ this.caption }}</p>
+              <p><a href="{{ this.link }}" target="_blank">{{ this.link }}</a></p>
             </div>
           </div>
 
