@@ -1,7 +1,7 @@
 define('data/work', function () {
 
   var workData = {
-    title: 'sample work',
+    title: 'work',
     lead: 'what we do',
     job: [
       {
