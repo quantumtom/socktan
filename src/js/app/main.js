@@ -1,6 +1,7 @@
 require([
   'controllers/about',
-  'app/router'
+  'app/router',
+  'lib/ga'
 ], function (About, Router) {
 
   About.start();
