@@ -1,19 +1,7 @@
 /* http://tutorialzine.com/2012/06/quick-tip-fullscreen-backgrounds */
 
 html {
-    /* This image will be displayed fullscreen */
-    background: url('../img/chromePista.jpg') top center no-repeat;
-
-    /* Ensure the html element always takes up the full height of the browser window */
-    min-height:100%;
-
-    /* The Magic */
-    background-size: contain;
-}
-
-body {
-    /* Workaround for some mobile browsers */
-    min-height:100%;
+    background: url('../img/Racebike_1970.svg.png') top center no-repeat;
 }
 
 div.well {
