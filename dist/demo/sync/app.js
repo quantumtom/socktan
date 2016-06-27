@@ -41,8 +41,6 @@ function App() {
       };
     }, 200);
 
-    console.dir(that.data);
-
     if (this.readyState === 0 || this.readyState === 4) {
       this.open('GET', 'https://weathersync.herokuapp.com/' + ep, true);
 
@@ -54,12 +52,13 @@ function App() {
       this.send(null);
     }
 
-    return this;
+    return that.data;
   };
 
-  var xhr = new XMLHttpRequest();
-
   function transport(ep) {
+    var xhr = new XMLHttpRequest();
+
+    // return JSON.parse(xhr.connect(ep));
     return JSON.parse(xhr.connect(ep));
   }
 
