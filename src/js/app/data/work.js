@@ -7,7 +7,7 @@ define('data/work', function () {
       {
         slug: 'metapants',
         first: true,
-        title: 'Meta Pants',
+        title: 'www.metapants.com',
         link: 'http://www.metapants.com',
         caption: 'A \'living\' style guide for Bootstrap components implemented through Handlebars via RequireJS.',
         image: {
@@ -16,7 +16,7 @@ define('data/work', function () {
       },
       {
         slug: 'ninjasparkle',
-        title: 'Ninja Sparkle',
+        title: 'www.ninjasparkle.com',
         link: 'http://www.ninjasparkle.com',
         caption: 'Real-time satellite weather. A little project animating a series of satellite weather images.',
         image: {
@@ -25,7 +25,7 @@ define('data/work', function () {
       },
       {
         slug: 'anthem',
-        title: 'Anthem Health',
+        title: 'connects.anthem.com',
         link: 'http://connects.anthem.com',
         caption: 'Deutsch wanted Anthem to improve the usability of their four public ' +
         'outreach sites. After a third-party conducted a statistical usability ' +
@@ -48,6 +48,18 @@ define('data/work', function () {
         }
       },
       {
+        slug: 'Bare',
+        title: 'Bare Escentuals Cosmetics',
+        link: 'https://www.facebook.com/bareminerals',
+        caption: 'TBWA\\Chiat\\Day\\Tequila needed a Facebook page that would tie in with  Bare Escentuals ' +
+        'Cosmetics\'  Be a Force of Beauty&trade; campaign. With seven video segments, it made sense to ' +
+        'build a video channel. We seized the opportunity to use the built-in video capabilities of ' +
+        'newer web browsers.',
+        image: {
+          url: 'https://s3.amazonaws.com/socktan/img/be-96x96.jpg'
+        }
+      },
+      {
         slug: 'Gt',
         title: 'GameTrailers (mobile site)',
         link: 'http://www.gametrailers.com/netstorage/mobile',
@@ -56,18 +68,6 @@ define('data/work', function () {
         'their site.',
         image: {
           url: 'https://s3.amazonaws.com/socktan/img/gt-mobile-reviews-96x96.png'
-        }
-      },
-      {
-        slug: 'Bare',
-        title: 'Bare Escentuals Cosmetics',
-        link: 'https://www.facebook.com/bareescentuals?sk=app_185852401487880',
-        caption: 'TBWA\\Chiat\\Day\\Tequila needed a Facebook page that would tie in with  Bare Escentuals ' +
-        'Cosmetics\'  Be a Force of Beauty&trade; campaign. With seven video segments, it made sense to ' +
-        'build a video channel. We seized the opportunity to use the built-in video capabilities of ' +
-        'newer web browsers.',
-        image: {
-          url: 'https://s3.amazonaws.com/socktan/img/be-96x96.jpg'
         }
       },
       {
@@ -83,22 +83,13 @@ define('data/work', function () {
       {
         slug: 'Disney',
         title: 'Disney Family.com',
-        link: 'http://www.kaboose.com',
+        link: 'http://family.disney.com/',
         caption: 'Right around the time the iPad came out, people at Disney Family.com started to realize they were ' +
         'going to have to do something about their Flash-driven content. We were able to reverse-engineer the ' +
         '"feature carousel" that sits in the center well of the kaboose.com landing page. The seamless transition ' +
         'was accomplished using the YUI library.',
         image: {
           url: 'https://s3.amazonaws.com/socktan/img/disney-family-96x96.png'
-        }
-      },
-      {
-        slug: 'Zoobooks',
-        title: 'Zoobooks',
-        link: 'https://s3.amazonaws.com/socktan/images/portfolio/medium/zoobooks.jpg',
-        caption: 'A monthly magazine for children, each issue of Zoobooks covers a different animal with pictures, educational diagrams and facts.',
-        image: {
-          url: 'https://s3.amazonaws.com/socktan/images/portfolio/small/zoobooks.jpg'
         }
       }
     ]

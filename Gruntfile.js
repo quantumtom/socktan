@@ -16,6 +16,8 @@
           src: [
             '*.html',
             'img/**',
+            'css/**',
+            'demo/**',
             'fonts/**',
             'js/**/*.js',
             'js/app/parts/*.hbar'
