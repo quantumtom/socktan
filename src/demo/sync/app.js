@@ -1,93 +1,98 @@
-var app = {
-  baseUrl: 'https://weathersync.herokuapp.com/',
-  xhr: {
-    method: 'GET',
-    contentType: 'application/json',
-    async: true,
-    dataType: 'jsonp'
-  },
-  request: {
-    origin: {
-      header: 'Access-Control-Allow-Origin',
-      value: '*'
-    },
-    headers: {
-      header: 'Access-Control-Allow-Headers',
-      value: 'Content-Type, Content-Range, Content-Disposition, Content-Description'
-    },
-    methods: {
-      header: 'Access-Control-Allow-Methods',
-      value: 'GET, PUT, POST, DELETE, OPTIONS'
+function App() {
+  "use strict";
 
-    },
-    ua: {
-      header: 'Api-User-Agent',
-      value: 'SocktanTest/1.1 (http://api.socktan.com; test@socktan.com) BasedOnTaboolaTest/1.0'
-    }
-  },
-  transport: function(ep) {
-    var xhttp = new XMLHttpRequest();
-    var promise = new Promise(function (resolve) {
+  XMLHttpRequest.prototype.setHeaders = function () {
+    var headers = [
+      {
+        header: 'Access-Control-Allow-Origin',
+        value: '*'
+      },
+      {
+        header: 'Access-Control-Allow-Headers',
+        value: 'Content-Type, Content-Range, Content-Disposition, Content-Description'
+      },
+      {
+        header: 'Access-Control-Allow-Methods',
+        value: 'GET, PUT, POST, DELETE, OPTIONS'
+      },
+      {
+        header: 'Api-User-Agent',
+        value: 'SocktanTest/1.2 (http://api.socktan.com; test@socktan.com) BasedOnSynacorTest/1.1'
+      }
+    ];
 
-      setTimeout(function () {
-        xhttp.onreadystatechange = function () {
-          if (xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
-            app.response = this.response;
+    var that = this;
 
-            resolve(this.response);
-          }
-        };
-
-        if (xhttp.readyState === 0 || xhttp.readyState === 4) {
-          xhttp.open(app.xhr.method, app.baseUrl + ep, app.xhr.async);
-
-          xhttp.setRequestHeader(app.request.headers.header, app.request.headers.value);
-          xhttp.setRequestHeader(app.request.ua.header, app.request.ua.value);
-          xhttp.setRequestHeader(app.request.methods.header, app.request.methods.value);
-          xhttp.setRequestHeader(app.request.origin.header, app.request.origin.value);
-
-          xhttp.contentType = app.xhr.contentType;
-          xhttp.responseType = 'text';
-          xhttp.send(null);
-
-        }
-
-      }, 200);
+    headers.forEach(function(c) {
+      that.setRequestHeader(c.header, c.value);
     });
 
-    return promise;
-  },
-  fixTemp: function (kelvin) {
-    return Math.round(((kelvin - 273.15)*9/5)+32) + '&deg;F';
-  },
-  startShow: function () {
-    app.response = JSON.parse(app.response);
+    return this;
+  };
 
-    app.weather = app.response.weather[0];
+  XMLHttpRequest.prototype.connect = function (ep) {
+    var that = this;
 
-    var iconEl = document.createElement('img');
-    iconEl.src =  'http://openweathermap.org/img/w/' + app.weather.icon +'.png';
+    setTimeout(function () {
+      that.onreadystatechange = function () {
+        if (this.readyState === that.DONE && this.status === 200) {
+          that.data = this.response;
+        }
+      };
+    }, 200);
 
-    document.getElementById('locationName').innerHTML = app.response.name;
-    document.getElementById('temperature').innerHTML = app.fixTemp(app.response.main.temp);
-    document.getElementById('icon').appendChild(iconEl);
-    document.getElementById('conditions').innerHTML = app.weather.main;
-  },
-  getWeather: function () {
-    var lat, lon;
+    console.dir(that.data);
 
-    app.location = JSON.parse(app.response).location;
+    if (this.readyState === 0 || this.readyState === 4) {
+      this.open('GET', 'https://weathersync.herokuapp.com/' + ep, true);
 
-    lat = app.location.latitude;
-    lon = app.location.longitude;
+      this.setHeaders();
 
-    app.transport('weather/' + lat + ',' + lon).then(app.startShow);
-  },
-  main: function () {
-    // First, get the geographic coordinates record for this IP address block.
-    // Then use the response to make a second call to get the weather.
-    app.transport('ip').then(app.getWeather);
+      this.contentType = 'application/json';
+      this.responseType = 'text';
+
+      this.send(null);
+    }
+
+    return this;
+  };
+
+  var xhr = new XMLHttpRequest();
+
+  function transport(ep) {
+    return JSON.parse(xhr.connect(ep));
   }
-};
 
-app.main();
+  function getLocation() {
+    return transport('ip').location;
+  }
+
+  function getWeather(location) {
+    return transport('weather/' + location.latitude + ',' + location.longitude).weather[0];
+  }
+
+  function view(elID) {
+    return document.getElementById(elID);
+  }
+
+  function fixTemp(kelvin) {
+    return Math.round(((kelvin - 273.15) * 9 / 5) + 32) + '&deg;F';
+  }
+
+  this.go = function () {
+    var iconEl = document.createElement('img');
+    var location = getLocation();
+    var weather = getWeather(location);
+
+    iconEl.src = 'http://openweathermap.org/img/w/' + weather.icon + '.png';
+    view('icon').appendChild(iconEl);
+
+    view('locationName').innerHTML = location.name;
+    view('temperature').innerHTML = fixTemp(weather.main.temp);
+    view('conditions').innerHTML = weather.main;
+  };
+}
+
+var myApp = new App();
+
+myApp.go();
