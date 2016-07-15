@@ -58,8 +58,12 @@ function App() {
   function transport(ep) {
     var xhr = new XMLHttpRequest();
 
-    // return JSON.parse(xhr.connect(ep));
-    return JSON.parse(xhr.connect(ep));
+    try {
+      return JSON.parse(xhr.connect(ep));
+    } catch (err) {
+      console.error(err);
+      return {};
+    }
   }
 
   function getLocation() {
@@ -84,6 +88,7 @@ function App() {
     var weather = getWeather(location);
 
     iconEl.src = 'http://openweathermap.org/img/w/' + weather.icon + '.png';
+
     view('icon').appendChild(iconEl);
 
     view('locationName').innerHTML = location.name;
