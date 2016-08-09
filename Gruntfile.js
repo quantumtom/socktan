@@ -14,7 +14,6 @@
           cwd: 'src',
           expand: true,
           src: [
-            '*.html',
             'img/**',
             'demo/**',
             'fonts/**',
@@ -95,10 +94,7 @@
             collapseWhitespace: true
           },
           files: {
-            'dist/home.html': 'src/home.html',
-            'dist/reel.html': 'src/reel.html',
-            'dist/talk.html': 'src/talk.html',
-            'dist/twitter.html': 'src/twitter.html'
+            'dist/index.html': 'src/index.html'
           }
         }
       },
@@ -164,6 +160,7 @@
     grunt.registerTask('build', [
       'clean',
       'cssmin',
+      'htmlmin:dist',
       'copy:build'
     ]);
 
