@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /include/
 Disallow: /js/
 Disallow: /css/
+Disallow: /img/
+Disallow: /fonts/
+Disallow: /demo/
