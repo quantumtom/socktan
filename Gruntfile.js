@@ -179,13 +179,15 @@
       'clean',
       'cssmin:dist',
       'htmlmin:dist',
-      'copy:build'
+      'copy:build',
+      'test'
     ]);
 
     grunt.registerTask('dev', [
       'clean',
       'copy:all',
-      'cssmin:dev'
+      'cssmin:dev',
+      'test'
     ]);
 
     grunt.registerTask('test', [
