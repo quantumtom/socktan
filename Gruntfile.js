@@ -76,14 +76,22 @@
         }
       },
       cssmin: {
-        options: {
-          sourceMap: true,
-          shorthandCompacting: false,
-          roundingPrecision: -1
-        },
         dist: {
           files: {
             'dist/css/main.css': ['src/css/*.css']
+          },
+          options: {
+            sourceMap: false,
+            shorthandCompacting: false,
+            roundingPrecision: -1
+          }
+        },
+        dev: {
+          files: {
+            'dist/css/main.css': ['src/css/*.css']
+          },
+          options: {
+            sourceMap: true
           }
         }
       },
@@ -131,6 +139,14 @@
             'default'
           ]
         },
+        dev: {
+          files: [
+            'src/*'
+          ],
+          tasks: [
+            'dev'
+          ]
+        },
         js: {
           files: [
             'src/js/*.js'
@@ -159,14 +175,15 @@
 
     grunt.registerTask('build', [
       'clean',
-      'cssmin',
+      'cssmin:dist',
       'htmlmin:dist',
       'copy:build'
     ]);
 
     grunt.registerTask('dev', [
       'clean',
-      'copy:all'
+      'copy:all',
+      'cssmin:dev'
     ]);
 
     grunt.registerTask('test', [
