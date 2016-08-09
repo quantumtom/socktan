@@ -4,6 +4,11 @@
   "eqeqeq": true,
   "undef": true,
   "globals": {
-    "jQuery": true
+    "$": true,
+    "define": true,
+    "document": true,
+    "jQuery": true,
+    "require": true,
+    "window": true
   }
 }
