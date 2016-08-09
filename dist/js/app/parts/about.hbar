@@ -1,9 +1,0 @@
-<div class="page-header">
-  <h3>{{title}}</h3>
-</div>
-<p class="lead">
-  {{lead}}
-</p>
-{{#each body}}
-  <p>{{ this.prose }}</p>
-{{/each}}

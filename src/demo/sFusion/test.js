@@ -64,25 +64,31 @@ function isMerge(s, part1, part2) {
 var assert = require('chai').assert;
 
 describe('Can merge', function () {
-  it('Should be true', function () {
+  it('Should be able to merge.', function () {
     assert.isTrue(isMerge('aabb', 'ab', 'ab'));
   });
-  it('Should be true', function () {
+  it('Should be able to merge.', function () {
     assert.isTrue(isMerge('codewars', 'code', 'wars'));
   });
-  it('Should be true', function () {
+  it('Should be able to merge.', function () {
     assert.isTrue(isMerge('codewars', 'cdw', 'oears'));
   });
-  it('Should be true', function () {
+  it('Should be able to merge.', function () {
     assert.isTrue(isMerge('Making progress', 'Mak pross', 'inggre'));
   });
-  it('Should be false', function () {
+  it('Should be able to merge.', function () {
+    assert.isTrue(isMerge('codewars', 'code', 'wasr'));
+  });
+  it('Should not be able to merge.', function () {
+    assert.isFalse(isMerge('codewars', 'code', 'code'));
+  });
+  it('Should not be able to merge.', function () {
     assert.isFalse(isMerge('codewars', 'cod', 'wars'));
   });
-  it('Should be false', function () {
+  it('Should not be able to merge.', function () {
     assert.isFalse(isMerge('codewars', 'code', 'warss'));
   });
-  it('Should be false', function () {
+  it('Should not be able to merge.', function () {
     assert.isFalse(isMerge('codewars', 'codes', 'wars'));
   });
 });
