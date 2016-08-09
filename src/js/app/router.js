@@ -15,7 +15,6 @@ define('app/router', ['jquery'], function () {
     }
   ];
 
-  var defaultRoute = '#about';
   var currentHash = '';
 
   function loadController(controllerName) {
@@ -38,8 +37,9 @@ define('app/router', ['jquery'], function () {
   }
 
   function startRouting() {
-    window.location.hash = window.location.hash || defaultRoute;
-    setInterval(hashCheck, 100);
+
+    window.location.hash = window.location.hash || routes[0];
+    window.setInterval(hashCheck, 100);
   }
 
   return {
