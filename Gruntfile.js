@@ -112,7 +112,8 @@
           jshintrc: true
         },
         test: [
-          'src/js/app/**/*.js'
+          'src/js/app/**/*.js',
+          'Gruntfile.js'
         ]
       },
       clean: {
