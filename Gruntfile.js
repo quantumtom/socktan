@@ -10,6 +10,19 @@
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
       copy: {
+        build: {
+          cwd: 'src',
+          expand: true,
+          src: [
+            '*.html',
+            'img/**',
+            'demo/**',
+            'fonts/**',
+            'js/**/*.js',
+            'js/app/parts/*.hbar'
+          ],
+          dest: 'dist'
+        },
         all: {
           cwd: 'src',
           expand: true,
@@ -144,9 +157,18 @@
      * Alias tasks
      */
 
-    grunt.registerTask('default', [
+    grunt.registerTask('default', ['build']);
+
+    grunt.registerTask('test', ['jshint']);
+
+    grunt.registerTask('build', [
       'clean',
       'cssmin',
+      'copy:build'
+    ]);
+
+    grunt.registerTask('dev', [
+      'clean',
       'copy:all'
     ]);
 
