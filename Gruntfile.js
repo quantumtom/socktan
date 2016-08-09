@@ -76,7 +76,7 @@
         }
       },
       cssmin: {
-        dist: {
+        build: {
           files: {
             'dist/css/main.css': ['src/css/*.css']
           },
@@ -96,7 +96,7 @@
         }
       },
       htmlmin: {
-        dist: {
+        build: {
           options: {
             removeComments: true,
             collapseWhitespace: true
@@ -108,10 +108,11 @@
       },
       jshint: {
         options: {
-          reporter: require('jshint-stylish')
+          reporter: require('jshint-stylish'),
+          jshintrc: true
         },
         test: [
-          'src/js/*.js'
+          'src/js/app/**/*.js'
         ]
       },
       clean: {
