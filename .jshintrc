@@ -4,8 +4,8 @@
   "eqeqeq": "true",
   "undef": "true",
   "globals": {
-    "jQuery": "true",
-    "require": "true",
-    "module": "true"
+    "jQuery": true,
+    "require": true,
+    "module": true
   }
 }
