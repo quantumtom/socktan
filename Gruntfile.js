@@ -11,7 +11,6 @@
       pkg: grunt.file.readJSON('package.json'),
       copy: {
         build: {
-          cwd: 'src',
           expand: true,
           src: [
             'img/**',
@@ -23,7 +22,6 @@
           dest: 'dist'
         },
         all: {
-          cwd: 'src',
           expand: true,
           src: [
             '*.html',
@@ -42,7 +40,6 @@
         src: {
           files: [
             {
-              cwd: 'src/js',
               expand: true,
               src: '*.js',
               dest: 'dist/js/src/js'
@@ -52,7 +49,6 @@
         other: {
           files: [
             {
-              cwd: 'src',
               expand: true,
               src: [
                 '.htaccess',
@@ -67,7 +63,6 @@
         js: {
           files: [
             {
-              cwd: 'src/js',
               expand: true,
               src: '**',
               dest: 'dist/js'
@@ -78,7 +73,7 @@
       cssmin: {
         build: {
           files: {
-            'dist/css/main.css': ['src/css/*.css']
+            'dist/css/main.css': ['css/*.css']
           },
           options: {
             sourceMap: false,
@@ -88,7 +83,7 @@
         },
         dev: {
           files: {
-            'dist/css/main.css': ['src/css/*.css']
+            'dist/css/main.css': ['css/*.css']
           },
           options: {
             sourceMap: true
@@ -102,7 +97,7 @@
             collapseWhitespace: true
           },
           files: {
-            'dist/index.html': 'src/index.html'
+            'dist/index.html': 'index.html'
           }
         }
       },
@@ -112,7 +107,7 @@
           jshintrc: true
         },
         test: [
-          'src/js/app/**/*.js',
+          'js/app/**/*.js',
           'Gruntfile.js'
         ]
       },
@@ -126,7 +121,7 @@
       watch: {
         all: {
           files: [
-            'src/**/*',
+            '**/*',
             'Gruntfile.js'
           ],
           tasks: [
@@ -135,7 +130,7 @@
         },
         dist: {
           files: [
-            'src/*'
+            '**/*'
           ],
           tasks: [
             'default'
@@ -143,7 +138,7 @@
         },
         dev: {
           files: [
-            'src/*'
+            '**/*'
           ],
           tasks: [
             'dev'
@@ -151,7 +146,7 @@
         },
         js: {
           files: [
-            'src/js/*.js'
+            'js/**/*.js'
           ],
           tasks: [
             'copy:js'
