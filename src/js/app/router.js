@@ -1,18 +1,9 @@
-define('app/router', ['jquery'], function () {
+define('app/router', function () {
 
   var routes = [
-    {
-      hash: '#about',
-      controller: 'about'
-    },
-    {
-      hash: '#work',
-      controller: 'work'
-    },
-    {
-      hash: '#contact',
-      controller: 'contact'
-    }
+    { hash: '#about',        controller: 'about'   },
+    { hash: '#work',         controller: 'work'    },
+    { hash: '#contact',      controller: 'contact' }
   ];
 
   var currentHash = '';
@@ -38,7 +29,7 @@ define('app/router', ['jquery'], function () {
 
   function startRouting() {
 
-    window.location.hash = window.location.hash || routes[0];
+    window.location.hash = window.location.hash || routes[0].hash;
     window.setInterval(hashCheck, 100);
   }
 
