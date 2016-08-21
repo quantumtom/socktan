@@ -16,15 +16,20 @@ requirejs.config({
     models:         'app/models',
     parts:          'app/parts',
     views:          'app/views',
+    backbone:       'lib/backbone',
     bootstrap:      'lib/bootstrap',
     ga:             'lib/ga',
     Handlebars:     'lib/handlebars',
     hbar:           'lib/hbars',
     jquery:         'lib/jquery',
     text:           'lib/text',
-    twbs:           'lib/twbs'
+    twbs:           'lib/twbs',
+    underscore:     'lib/underscore'
   },
   shim: {
+    backbone: {
+      deps: ['underscore']
+    },
     bootstrap: {
       deps: ['jquery']
     },
@@ -34,6 +39,9 @@ requirejs.config({
     },
     'jquery': {
       exports: '$'
+    },
+    underscore: {
+      exports: '_'
     }
   },
   hbars: {

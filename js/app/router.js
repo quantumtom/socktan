@@ -1,39 +1,52 @@
-define('app/router', function () {
+// Filename: router.js
+define([
+    'backbone',
+    'views/about',
+    'views/contact',
+    'views/work'
+], function (Backbone, AboutView, ContactView, WorkView) {
 
-  var routes = [
-    { hash: '#about',        controller: 'about'   },
-    { hash: '#work',         controller: 'work'    },
-    { hash: '#contact',      controller: 'contact' }
-  ];
-
-  var currentHash = '';
-
-  function loadController(controllerName) {
-    $('#main-spinner').toggleClass('active');
-
-    require(['controllers/' + controllerName], function (controller) {
-      controller.start();
-    });
-  }
-
-  function hashCheck() {
-    if (window.location.hash !== currentHash) {
-      for (var i = 0, currentRoute; currentRoute = routes[i++];) {
-        if (window.location.hash === currentRoute.hash) {
-          loadController(currentRoute.controller);
+    var AppRouter = Backbone.Router.extend({
+        routes: {
+            // Define some URL routes
+            'about': 'showAbout',
+            'contact': 'showContact',
+            'work': 'showWork'
         }
-      }
-      currentHash = window.location.hash;
-    }
-  }
+    });
 
-  function startRouting() {
+    var initialize = function () {
 
-    window.location.hash = window.location.hash || routes[0].hash;
-    window.setInterval(hashCheck, 100);
-  }
+        var app_router = new AppRouter;
 
-  return {
-    startRouting: startRouting
-  };
+        app_router.on('route:showAbout', function () {
+
+            // Call render on the module we loaded in via the dependency array
+            var projectsView = new AboutView();
+            projectsView.render();
+
+        });
+
+        app_router.on('route:showContact', function () {
+
+            // Like above, call render but know that this view has nested sub views which
+            // handle loading and displaying data from the GitHub API
+            var contactView = new ContactView();
+            contactView.render();
+        });
+
+        app_router.on('route:showWork', function () {
+
+            // Like above, call render but know that this view has nested sub views which
+            // handle loading and displaying data from the GitHub API
+            var workView = new WorkView();
+            workView.render();
+        });
+
+        Backbone.history.start();
+    };
+
+    return {
+        initialize: initialize
+    };
 });

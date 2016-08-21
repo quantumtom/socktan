@@ -1,10 +1,10 @@
 require([
-  'controllers/about',
-  'app/router',
-  'lib/ga'
+    'controllers/about',
+    'app/router',
+    'lib/ga'
 ], function (About, Router) {
 
-  About.start();
+    About.start();
 
-  Router.startRouting();
+    Router.initialize();
 });
