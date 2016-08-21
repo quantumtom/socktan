@@ -114,7 +114,7 @@
             clean: {
                 dist: {
                     src: [
-                        'dist/*'
+                        'dist/**'
                     ]
                 }
             },
@@ -175,7 +175,7 @@
 
         grunt.registerTask('build', [
             'clean',
-            'cssmin:dist',
+            'cssmin:build',
             'htmlmin:dist',
             'copy:build',
             'test'
