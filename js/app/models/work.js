@@ -1,4 +1,6 @@
-define(['backbone'], function (Backbone) {
+define([
+    'backbone'
+], function (Backbone) {
     var WorkModel = Backbone.Model.extend({
         defaults: {
             content: 'empty ...'
@@ -19,4 +21,3 @@ define(['backbone'], function (Backbone) {
     return WorkModel;
 
 });
-

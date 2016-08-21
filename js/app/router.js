@@ -17,7 +17,7 @@ define([
 
     var initialize = function () {
 
-        var app_router = new AppRouter;
+        var app_router = new AppRouter();
 
         app_router.on('route:showAbout', function () {
 
@@ -33,6 +33,7 @@ define([
             // handle loading and displaying data from the GitHub API
             var contactView = new ContactView();
             contactView.render();
+
         });
 
         app_router.on('route:showWork', function () {
@@ -41,6 +42,7 @@ define([
             // handle loading and displaying data from the GitHub API
             var workView = new WorkView();
             workView.render();
+
         });
 
         Backbone.history.start();

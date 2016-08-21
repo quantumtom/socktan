@@ -1,5 +1,5 @@
 require([
-    'controllers/about',
+    'views/about',
     'app/router',
     'lib/ga'
 ], function (About, Router) {

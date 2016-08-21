@@ -1,7 +1,7 @@
 define([
     'backbone',
     'hbar!parts/work'
-], function (WorkPart, Backbone) {
+], function (Backbone, workPart) {
     var WorkView = Backbone.View.extend({
         render: function () {
             var workData = {
@@ -98,7 +98,7 @@ define([
                     }
                 ]
             };
-            this.$el.html(WorkPart(workData));
+            this.$el.html(workPart(workData));
         }
     });
 

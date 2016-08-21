@@ -1,8 +1,9 @@
 define([
     'backbone',
+    'jquery',
     'hbar!parts/contact',
-    'lib/validator'
-], function (ContactPart, Backbone) {
+    'validator'
+], function (Backbone, $, contactPart) {
 
     var ContactView = Backbone.View.extend({
         render: function () {
@@ -15,7 +16,7 @@ define([
                 'interesting). We can get started on your project right away.'
             };
 
-            this.$el.html(ContactPart(contactData));
+            this.$el.html(contactPart(contactData));
 
             $('#myForm').validator();
         }
