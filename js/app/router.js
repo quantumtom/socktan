@@ -21,7 +21,6 @@ define([
 
         app_router.on('route:showAbout', function () {
 
-            // Call render on the module we loaded in via the dependency array
             var projectsView = new AboutView();
             projectsView.render();
 
@@ -29,8 +28,6 @@ define([
 
         app_router.on('route:showContact', function () {
 
-            // Like above, call render but know that this view has nested sub views which
-            // handle loading and displaying data from the GitHub API
             var contactView = new ContactView();
             contactView.render();
 

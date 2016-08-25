@@ -2,10 +2,11 @@ define([
     'backbone',
     'hbar!parts/about'
 ], function (Backbone, aboutPart) {
-    var AboutView = Backbone.View.extend({
-        render: function () {
-            "use strict";
+    "use strict";
 
+    var AboutView = Backbone.View.extend({
+        el: '#page-body',
+        render: function () {
             var aboutData = {
                 title: 'about',
                 lead: '(technically) creative',

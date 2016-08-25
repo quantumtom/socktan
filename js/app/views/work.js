@@ -2,7 +2,10 @@ define([
     'backbone',
     'hbar!parts/work'
 ], function (Backbone, workPart) {
+    "use strict";
+
     var WorkView = Backbone.View.extend({
+        el: '#page-body',
         render: function () {
             var workData = {
                 title: 'work',

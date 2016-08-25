@@ -1,14 +1,12 @@
 define([
     'backbone',
-    'jquery',
-    'hbar!parts/contact',
-    'validator'
-], function (Backbone, $, contactPart) {
+    'hbar!parts/contact'
+], function (Backbone, contactPart) {
+    "use strict";
 
     var ContactView = Backbone.View.extend({
+        el: '#page-body',
         render: function () {
-            "use strict";
-
             var contactData = {
                 title: 'contact',
                 lead: 'let\'s chat',
@@ -17,8 +15,6 @@ define([
             };
 
             this.$el.html(contactPart(contactData));
-
-            $('#myForm').validator();
         }
     });
 

@@ -3,8 +3,9 @@ require([
     'app/router',
     'lib/ga'
 ], function (About, Router) {
+    var about = new About();
 
-    About.start();
+    about.render();
 
     Router.initialize();
 });

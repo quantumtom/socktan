@@ -122,37 +122,13 @@
                 options: {
                     atBegin: true
                 },
-                all: {
+                build: {
                     files: [
                         '**/*',
                         'Gruntfile.js'
                     ],
                     tasks: [
                         'default'
-                    ]
-                },
-                dist: {
-                    files: [
-                        '**/*'
-                    ],
-                    tasks: [
-                        'default'
-                    ]
-                },
-                dev: {
-                    files: [
-                        '**/*'
-                    ],
-                    tasks: [
-                        'dev'
-                    ]
-                },
-                js: {
-                    files: [
-                        'js/**/*.js'
-                    ],
-                    tasks: [
-                        'copy:js'
                     ]
                 }
             }
@@ -176,7 +152,7 @@
         grunt.registerTask('build', [
             'clean',
             'cssmin:build',
-            'htmlmin:dist',
+            'htmlmin:build',
             'copy:build',
             'test'
         ]);
