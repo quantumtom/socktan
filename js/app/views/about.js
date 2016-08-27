@@ -5,18 +5,19 @@ define([
 ], function (BaseView, aboutPart, AboutModel) {
     "use strict";
 
-    var AboutView = BaseView.extend({
+    return BaseView.extend({
         initialize: function () {
-            var aboutModel = new AboutModel();
-            this.model = aboutModel;
+            this.model = new AboutModel();
             this.content = this.model.attributes.content;
+            this.model.bind("change", this.render, this);
         },
         render: function () {
             this.$el.html(aboutPart(this.content));
 
             return this;
+        },
+        onClose: function(){
+            this.model.unbind("change", this.render);
         }
     });
-
-    return AboutView;
 });

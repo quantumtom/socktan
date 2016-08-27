@@ -5,18 +5,19 @@ define([
 ], function (BaseView, contactPart, ContactModel) {
     "use strict";
 
-    var ContactView = BaseView.extend({
+    return BaseView.extend({
         initialize: function () {
-            var contactModel = new ContactModel();
-            this.model = contactModel;
+            this.model = new ContactModel();
             this.content = this.model.attributes.content;
+            this.model.bind("change", this.render, this);
         },
         render: function () {
             this.$el.html(contactPart(this.content));
 
             return this;
+        },
+        onClose: function() {
+            this.model.unbind("change", this.render);
         }
     });
-
-    return ContactView;
 });
