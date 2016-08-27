@@ -1,28 +1,30 @@
 // Filename: router.js
 define([
+    'underscore',
     'backbone',
     'views/about',
     'views/contact',
     'views/work'
-], function (Backbone, AboutView, ContactView, WorkView) {
+], function (_, Backbone, AboutView, ContactView, WorkView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
             // Define some URL routes
             'about': 'showAbout',
             'contact': 'showContact',
-            'work': 'showWork'
+            'work': 'showWork',
+            '*actions': 'showAbout'
         }
     });
 
-    var initialize = function () {
+    var start = function () {
 
         var app_router = new AppRouter();
 
         app_router.on('route:showAbout', function () {
 
-            var projectsView = new AboutView();
-            projectsView.render();
+            var aboutView= new AboutView();
+            aboutView.render();
 
         });
 
@@ -46,6 +48,6 @@ define([
     };
 
     return {
-        initialize: initialize
+        start: start
     };
 });

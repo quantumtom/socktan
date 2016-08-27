@@ -1,20 +1,15 @@
-define(['backbone'], function (Backbone) {
-  var ContactModel = Backbone.Model.extend({
+define([
+  'models/base'
+], function (BaseModel) {
+  var ContactModel = BaseModel.extend({
     defaults: {
-      content: 'empty ...'
-    },
-    initialize: function () {
-      if (!this.get('content')) {
-        this.set({'content': this.defaults.content});
+      content: {
+        title: 'contact',
+        lead: 'let\'s chat',
+        body: 'Whether you are a human or a robot, we would love to hear from you (robots are often more ' +
+        'interesting). We can get started on your project right away.'
       }
-    },
-
-    // Remove this from *localStorage* and delete its view.
-    clear: function() {
-      this.destroy();
-      this.view.remove();
-    }
-  });
+    }});
 
   return ContactModel;
 });
