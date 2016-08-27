@@ -4,7 +4,7 @@ define([
 ], function (_, Backbone) {
     "use strict";
 
-    var BaseView = function(options) {
+    var BaseView = function (options) {
         Backbone.View.call(this, options);
     };
 

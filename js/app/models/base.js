@@ -4,7 +4,7 @@ define([
 ], function (_, Backbone) {
     "use strict";
 
-    var BaseModel = function(options) {
+    var BaseModel = function (options) {
         Backbone.Model.call(this, options);
     };
 
@@ -17,7 +17,7 @@ define([
         },
 
         // Remove this from *localStorage* and delete its view.
-        clear: function() {
+        clear: function () {
             this.destroy();
             this.view.remove();
         }
