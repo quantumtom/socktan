@@ -20,6 +20,7 @@ requirejs.config({
         Handlebars:         'lib/handlebars',
         hbar:               'lib/hbars',
         jquery:             'lib/jquery',
+        json:               'lib/json',
         text:               'lib/text',
         twbs:               'lib/twbs',
         underscore:         'lib/underscore',
@@ -27,7 +28,8 @@ requirejs.config({
     },
     shim: {
         backbone: {
-            deps: ['underscore']
+            deps: ['underscore', 'json'],
+            exports: 'Backbone'
         },
         bootstrap: {
             deps: ['jquery']
@@ -39,8 +41,14 @@ requirejs.config({
         'jquery': {
             exports: '$'
         },
+        json: {
+            exports: 'JSON'
+        },
         underscore: {
             exports: '_'
+        },
+        text: {
+            exports: 'text'
         },
         validator: {
             deps: ['jquery']
