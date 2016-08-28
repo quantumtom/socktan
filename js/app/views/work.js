@@ -3,13 +3,13 @@ define([
     'hbar!parts/work',
     'models/work'
 ], function (BaseView, workPart, WorkModel) {
-    "use strict";
+    'use strict';
 
     return BaseView.extend({
         initialize: function () {
             this.model = new WorkModel();
             this.content = this.model.attributes.content;
-            this.model.bind("change", this.render, this);
+            this.model.bind('change', this.render, this);
         },
         render: function () {
             this.$el.html(workPart(this.content));
@@ -17,7 +17,7 @@ define([
             return this;
         },
         onClose: function(){
-            this.model.unbind("change", this.render);
+            this.model.unbind('change', this.render);
         }
     });
 });

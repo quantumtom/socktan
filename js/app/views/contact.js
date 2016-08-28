@@ -3,13 +3,13 @@ define([
     'hbar!parts/contact',
     'models/contact'
 ], function (BaseView, contactPart, ContactModel) {
-    "use strict";
+    'use strict';
 
     return BaseView.extend({
         initialize: function () {
             this.model = new ContactModel();
             this.content = this.model.attributes.content;
-            this.model.bind("change", this.render, this);
+            this.model.bind('change', this.render, this);
         },
         render: function () {
             this.$el.html(contactPart(this.content));
@@ -17,7 +17,7 @@ define([
             return this;
         },
         onClose: function() {
-            this.model.unbind("change", this.render);
+            this.model.unbind('change', this.render);
         }
     });
 });

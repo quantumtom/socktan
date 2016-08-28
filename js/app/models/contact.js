@@ -1,7 +1,9 @@
 define([
     'models/base'
 ], function (BaseModel) {
-    var ContactModel = BaseModel.extend({
+    'use strict';
+
+    return BaseModel.extend({
         defaults: {
             content: {
                 title: 'contact',
@@ -11,7 +13,5 @@ define([
             }
         }
     });
-
-    return ContactModel;
 });
 

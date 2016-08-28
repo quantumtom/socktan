@@ -2,7 +2,7 @@ define([
     'underscore',
     'backbone'
 ], function (_, Backbone) {
-    "use strict";
+    'use strict';
 
     var BaseView = function(options) {
         Backbone.View.call(this, options);

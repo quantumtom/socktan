@@ -6,6 +6,7 @@ define([
     'views/contact',
     'views/work'
 ], function (_, Backbone, AboutView, ContactView, WorkView) {
+    'use strict';
 
     var AppRouter = Backbone.Router.extend({
         routes: {

@@ -1,5 +1,7 @@
 define(['backbone'], function (Backbone) {
-    var AboutModel = Backbone.Model.extend({
+    'use strict';
+
+    return Backbone.Model.extend({
         defaults: {
             content: {
                 title: 'about',
@@ -18,6 +20,4 @@ define(['backbone'], function (Backbone) {
             }
         }
     });
-
-    return AboutModel;
 });

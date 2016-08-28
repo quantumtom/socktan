@@ -1,7 +1,9 @@
 define([
     'models/base'
 ], function (BaseModel) {
-    var WorkModel = BaseModel.extend({
+    'use strict';
+
+    return BaseModel.extend({
         defaults: {
             content: {
                 title: 'work',
@@ -99,6 +101,4 @@ define([
             }
         }
     });
-
-    return WorkModel;
 });

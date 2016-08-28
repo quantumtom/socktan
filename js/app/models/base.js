@@ -2,7 +2,7 @@ define([
     'underscore',
     'backbone'
 ], function (_, Backbone) {
-    "use strict";
+    'use strict';
 
     var BaseModel = function (options) {
         Backbone.Model.call(this, options);
