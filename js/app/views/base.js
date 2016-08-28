@@ -12,7 +12,7 @@ define([
         // base functions will be implemented here
         el: '#page-body',
         close: function () {
-            this.remove();
+            //this.remove();
             this.unbind();
             if (this.onClose){
                 this.onClose();

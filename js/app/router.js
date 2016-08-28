@@ -15,24 +15,47 @@ define([
             'contact': 'showContact',
             'work': 'showWork',
             '*actions': 'showAbout'
+        },
+        initialize: function(options){
+            this.appView = options.appView;
         }
     });
 
+
+    function AppView() {
+
+        this.showView = function (view) {
+            if (this.currentView){
+                this.currentView.close();
+            }
+
+            this.currentView = view;
+            this.currentView.render();
+
+            $('#mainContent').html(this.currentView.el);
+        };
+
+    }
+
     var start = function () {
 
-        var app_router = new AppRouter();
+        var app_router = new AppRouter({
+            appView: new AppView()
+        });
 
         app_router.on('route:showAbout', function () {
 
             var aboutView= new AboutView();
-            aboutView.render();
+            this.appView.showView(aboutView);
+            //aboutView.render();
 
         });
 
         app_router.on('route:showContact', function () {
 
             var contactView = new ContactView();
-            contactView.render();
+            this.appView.showView(contactView);
+            //contactView.render();
 
         });
 
