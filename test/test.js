@@ -5,9 +5,11 @@
 
 try {
     var chai = require('chai');
-} catch (e) {
-    //console.error(e);
-}
+} catch (e) {}
+
+try {
+    var requirejs = require('requirejs');
+} catch (e) {}
 
 /**
  * Here, check to see if the try worked. If not, grab the assert
