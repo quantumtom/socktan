@@ -2,6 +2,7 @@
  * This is pretty neat. We can use the same JavaScript and run it
  * both through Webstorm and in the browser.
  */
+
 try {
     var chai = require('chai');
 } catch (e) {
@@ -17,6 +18,7 @@ try {
  *
  * @type {*|AssertStatic|number}
  */
+
 var assert = chai.assert || window.assert;
 
 describe('Chai Assertion Self-Test', function () {

@@ -11,10 +11,16 @@
     <script src="test/mocha.js"></script>
     <script src="js/test/chai.js"></script>
     <script>
+      /**
+       * This is where we set assert for browser-based testing.
+       * require('chai') only works on the server (as in the IDE).
+       *
+       * @type {AssertStatic}
+       */
       window.assert = chai.assert;
-        mocha.setup({
-          ui: 'bdd'
-        });
+      mocha.setup({
+        ui: 'bdd'
+      });
     </script>
     <script data-main="js/rjsTest" src="js/require.js"></script>
   </body>

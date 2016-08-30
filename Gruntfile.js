@@ -38,7 +38,10 @@
                     expand: true,
                     src: [
                         'test/*',
-                        'test.html'
+                        'js/rjsTest.js',
+                        'js/rjsConfig.js',
+                        'test.html',
+                        'js/chai.js'
                     ],
                     dest: 'dist'
                 },

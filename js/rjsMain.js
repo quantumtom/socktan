@@ -1,3 +1,3 @@
 require(['rjsConfig'], function () {
-    require(['app/start'], function () {});
+    require(['app/main'], function () {});
 });
