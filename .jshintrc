@@ -4,6 +4,7 @@
   "eqeqeq": "true",
   "undef": "true",
   "globals": {
+    "define": true,
     "jQuery": true,
     "require": true,
     "module": true

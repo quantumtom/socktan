@@ -1,4 +1,3 @@
-// Filename: router.js
 define([
     'underscore',
     'backbone',
@@ -16,7 +15,7 @@ define([
             'work': 'showWork',
             '*actions': 'showAbout'
         },
-        initialize: function(options){
+        initialize: function (options) {
             this.appView = options.appView;
         }
     });
@@ -25,7 +24,7 @@ define([
     function AppView() {
 
         this.showView = function (view) {
-            if (this.currentView){
+            if (this.currentView) {
                 this.currentView.close();
             }
 
@@ -45,7 +44,7 @@ define([
 
         app_router.on('route:showAbout', function () {
 
-            var aboutView= new AboutView();
+            var aboutView = new AboutView();
             this.appView.showView(aboutView);
             //aboutView.render();
 

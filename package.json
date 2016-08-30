@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Socktan/socktan.com#readme",
   "dependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
     "compression": "^1.6.1",
     "express": "^4.13.4",
     "grunt": "^0.4.5",
@@ -28,7 +30,8 @@
     "grunt-contrib-jshint": "^0.11.3",
     "handlebars": "^4.0.3",
     "jshint": "*",
-    "jshint-stylish": "*"
+    "jshint-stylish": "*",
+    "mocha": "^3.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -34,6 +34,22 @@
                     ],
                     dest: 'dist'
                 },
+                mocha: {
+                    expand: true,
+                    src: [
+                        'test/*',
+                        'test.html'
+                    ],
+                    dest: 'dist'
+                },
+                chai: {
+                    expand: true,
+                    cwd: 'node_modules/chai/',
+                    src: [
+                        'chai.js'
+                    ],
+                    dest: 'test'
+                },
                 /**
                  * Copies original source from src/js to build/js/src/js for source map debugging.
                  */
@@ -130,6 +146,17 @@
                     tasks: [
                         'default'
                     ]
+                },
+                mocha: {
+                    files: [
+                        'js/app/**/*',
+                        'test/**/*',
+                        'Gruntfile.js',
+                        'test.html'
+                    ],
+                    tasks: [
+                        'mocha'
+                    ]
                 }
             }
         });
@@ -155,6 +182,11 @@
             'htmlmin:build',
             'copy:build',
             'test'
+        ]);
+
+        grunt.registerTask('mocha', [
+            'copy:chai',
+            'copy:mocha'
         ]);
 
         grunt.registerTask('dev', [
