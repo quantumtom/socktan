@@ -4,6 +4,16 @@
 
     module.exports = function (grunt) {
 
+        var watchedFiles = [
+            'css/**/*',
+            'fonts/**/*',
+            'img/**/*',
+            'js/**/*',
+            '*.html',
+            '*.json',
+            '*.js',
+            '!dist'
+        ];
         var baseUrl = 'http://localhost:8000/';
         var testPath = baseUrl + 'test.html';
         var routesArr = ['about', 'contact', 'work'];
@@ -29,11 +39,11 @@
                 build: {
                     expand: true,
                     src: [
+                        '*.html',
                         'img/**',
                         'demo/**',
                         'fonts/**',
-                        'js/**/*.js',
-                        'js/app/parts/*.hbar'
+                        'js/**/*'
                     ],
                     dest: 'dist'
                 },
@@ -45,8 +55,7 @@
                         'css/**',
                         'demo/**',
                         'fonts/**',
-                        'js/**/*.js',
-                        'js/app/parts/*.hbar'
+                        'js/**'
                     ],
                     dest: 'dist'
                 },
@@ -94,7 +103,6 @@
                         {
                             expand: true,
                             src: [
-                                '.htaccess',
                                 'img/**',
                                 'cache.manifest',
                                 'favicon.ico'
@@ -212,10 +220,7 @@
                     atBegin: true
                 },
                 build: {
-                    files: [
-                        '**/*',
-                        'Gruntfile.js'
-                    ],
+                    files: watchedFiles,
                     tasks: [
                         'default'
                     ]
@@ -252,28 +257,20 @@
 
         grunt.registerTask('default', ['build']);
 
-        grunt.registerTask('test', ['jshint']);
-
         grunt.registerTask('build', [
             'clean',
-            'cssmin:build',
-            'htmlmin:build',
             'copy:build',
-            'test'
+            'cssmin:build',
+            'htmlmin:build'
         ]);
 
         grunt.registerTask('markup', ['shell:snapshots','bootlint']);
 
+        grunt.registerTask('test', ['jshint']);
+
         grunt.registerTask('mocha', [
             'copy:chai',
             'copy:mocha'
-        ]);
-
-        grunt.registerTask('dev', [
-            'clean',
-            'copy:all',
-            'cssmin:dev',
-            'test'
         ]);
 
         grunt.registerTask('test', [

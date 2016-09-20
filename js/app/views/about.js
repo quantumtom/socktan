@@ -1,23 +1,15 @@
 define([
     'views/base',
+    'Handlebars',
     'hbar!parts/about',
-    'models/about'
-], function (BaseView, aboutPart, AboutModel) {
+    'json!data/about.json'
+], function (BaseView, Handlebars, aboutPart, aboutData) {
     'use strict';
 
     return BaseView.extend({
         initialize: function () {
-            this.model = new AboutModel();
-            this.content = this.model.attributes.content;
-            this.model.bind('change', this.render, this);
-        },
-        render: function () {
-            this.$el.html(aboutPart(this.content));
-
-            return this;
-        },
-        onClose: function(){
-            this.model.unbind('change', this.render);
+            this.content = aboutData;
+            this.template = Handlebars.compile(aboutPart(this.content));
         }
     });
 });

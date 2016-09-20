@@ -11,12 +11,10 @@ define([
     _.extend(BaseView.prototype, Backbone.View.prototype, {
         // base functions will be implemented here
         el: '#page-body',
-        close: function () {
-            //this.remove();
-            this.unbind();
-            if (this.onClose){
-                this.onClose();
-            }
+        render: function () {
+            this.$el.html(this.template);
+
+            return this;
         }
     });
 

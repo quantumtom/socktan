@@ -1,5 +1,5 @@
-require([
-    'app/router',
+define([
+    'router',
     'lib/ga'
 ], function (router) {
     'use strict';

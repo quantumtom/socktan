@@ -1,23 +1,15 @@
 define([
     'views/base',
+    'Handlebars',
     'hbar!parts/contact',
-    'models/contact'
-], function (BaseView, contactPart, ContactModel) {
+    'json!data/contact.json'
+], function (BaseView, Handlebars, contactPart, contactData) {
     'use strict';
 
     return BaseView.extend({
         initialize: function () {
-            this.model = new ContactModel();
-            this.content = this.model.attributes.content;
-            this.model.bind('change', this.render, this);
-        },
-        render: function () {
-            this.$el.html(contactPart(this.content));
-
-            return this;
-        },
-        onClose: function() {
-            this.model.unbind('change', this.render);
+            this.content = contactData;
+            this.template = Handlebars.compile(contactPart(this.content));
         }
     });
 });
