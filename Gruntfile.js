@@ -262,6 +262,8 @@
             'test'
         ]);
 
+        grunt.registerTask('markup', ['shell:snapshots','bootlint']);
+
         grunt.registerTask('mocha', [
             'copy:chai',
             'copy:mocha'
