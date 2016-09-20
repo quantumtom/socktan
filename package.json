@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Socktan/socktan.com#readme",
   "dependencies": {
     "assert": "^1.4.1",
+    "body-parser": "^1.15.2",
     "chai": "^3.5.0",
     "compression": "^1.6.1",
     "express": "^4.13.4",
@@ -37,6 +38,7 @@
     "jshint": "*",
     "jshint-stylish": "*",
     "mocha": "^3.0.2",
+    "mongoose": "^4.6.1",
     "phantomjs-prebuilt": "^2.1.12",
     "requirejs": "^2.2.0"
   },
