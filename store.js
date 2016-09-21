@@ -10,12 +10,9 @@ db.once('open', function () {
 
 var contactSchema = new mongoose.Schema({
     id: String,
-    firstName: String,
-    lastName: String,
+    name: String,
     email: String,
-    mobileNumber: String,
-    serviceType: String,
-    toc: Boolean
+    telephone: String
 });
 
 var Contact = mongoose.model('Contact', contactSchema );
