@@ -16,7 +16,9 @@ define([
             this.content = contactData;
             this.template = Handlebars.compile(contactPart(this.content));
         },
-        onSubmit: function () {
+        onSubmit: function (event) {
+            event.preventDefault();
+
             var formData = $('#contactForm').serializeArray();
             var contactModel = new ContactModel();
 
