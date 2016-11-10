@@ -14,7 +14,7 @@
     <form data-toggle="validator" role="form">
       <div class="form-group">
         <label for="inputName" class="control-label">Name</label>
-        <input type="text" class="form-control" id="inputName" name="name" value="Tobias Fünke">
+        <input type="text" class="form-control" id="inputName" name="name" value="Nathan Hale">
         <div class="help-block with-errors"></div>
       </div>
       <div class="form-group">
