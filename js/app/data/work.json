@@ -5,7 +5,7 @@
             {
                 "slug": "metapants",
                 "first": true,
-                "title": "www.metapants.com",
+                "title": "MetaPants",
                 "link": "http://www.metapants.com",
                 "caption": "A \"living\" style guide for Bootstrap components implemented through Handlebars via RequireJS.",
                 "image": {
@@ -14,7 +14,7 @@
             },
             {
                 "slug": "ninjasparkle",
-                "title": "www.ninjasparkle.com",
+                "title": "NinjaSparkle",
                 "link": "http://www.ninjasparkle.com",
                 "caption": "Real-time satellite weather. A little project animating a series of satellite weather images.",
                 "image": {
@@ -23,7 +23,7 @@
             },
             {
                 "slug": "anthem",
-                "title": "connects.anthem.com",
+                "title": "Anthem/Blue Cross",
                 "link": "http://connects.anthem.com",
                 "caption": "Deutsch wanted Anthem to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.",
                 "image": {
