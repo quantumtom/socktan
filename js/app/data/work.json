@@ -3,8 +3,27 @@
   "lead": "what we do",
   "job": [
     {
-      "slug": "metapants",
+      "slug": "snervous",
       "first": true,
+      "title": "Snervous",
+      "link": "http://www.snervous.com",
+      "caption": "Interactive brochure site for Tyler Oakley's eponymous feature film 'Snervous'.",
+      "image": {
+        "url": "img/snervous.jpg"
+      }
+    },
+    {
+      "slug": "betch",
+      "first": true,
+      "title": "Betch",
+      "link": "http://www.betchsketch.com",
+      "caption": "Interactive brochure site for the Betch Sketch eponymous feature film.",
+      "image": {
+        "url": "img/betch.png"
+      }
+    },
+    {
+      "slug": "metapants",
       "title": "MetaPants",
       "link": "http://www.metapants.com",
       "caption": "A \"living\" style guide for Bootstrap components implemented through Handlebars via RequireJS.",
