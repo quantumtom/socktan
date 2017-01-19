@@ -3,24 +3,23 @@ var express = require('express');
 var app = express();
 var compress = require('compression');
 var bodyParser = require('body-parser');
-var requestBody = {};
-var Contact = require('./store.js');
 
 app.use(compress());
+
 console.log('__dirname = ' + __dirname);
+
 app.use('/', express.static(__dirname + '/dist'));
 app.use(bodyParser.json());
 app.set('port', process.env.PORT || 5000);
-app.listen(app.get('port'), function() { console.log('listening');});
 
-app.post('/api/v1/contact', function (req) {
-    requestBody = req.body;
+app.listen(app.get('port'), function() {
+    console.log('listening');}
+);
 
-    var newContact = new Contact(requestBody);
+var multer  = require('multer');
+var upload = multer({ dest: 'dist/uploads/' });
 
-    newContact.save(function (err) {
-        if (err) {
-            return console.error(err);
-        }
-    });
+app.post('/uploads', upload.single('sourceVideo'), function (req, res, next) {
+    console.log(req.body);
+    console.log(req.file);
 });

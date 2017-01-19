@@ -37,6 +37,7 @@
     "grunt-contrib-cssmin": "^1.0.2",
     "grunt-contrib-htmlmin": "^2.0.0",
     "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-express-server": "^0.5.3",
     "grunt-mocha-phantomjs": "^4.0.0",
     "grunt-shell": "^1.3.1",
@@ -47,6 +48,7 @@
     "less-plugin-clean-css": "^1.5.1",
     "mocha": "^3.0.2",
     "mongoose": "^4.6.0",
+    "multer": "^1.2.1",
     "phantomjs-prebuilt": "^2.1.12",
     "requirejs": "^2.2.0"
   },
