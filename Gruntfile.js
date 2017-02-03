@@ -46,7 +46,7 @@
                         'fonts/**',
                         'js/**/*',
                         'video/**/*',
-                        'uploads/**/*'
+                        'media/**/*'
                     ],
                     dest: 'dist'
                 },
@@ -253,8 +253,8 @@
 
         grunt.registerTask('build', [
             'clean',
-            'copy:build',
             'sass:build',
+            'copy:build',
             'htmlmin:build'
         ]);
 
