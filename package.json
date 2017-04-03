@@ -1,6 +1,10 @@
 {
   "name": "socktan.com",
   "version": "1.1.2",
+  "engines": {
+    "node": "7.4.0",
+    "npm": "4.0.5"
+  },
   "description": "socktan.com",
   "main": "server.js",
   "scripts": {
