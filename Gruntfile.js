@@ -6,7 +6,6 @@
 
         var watchedFiles = [
             'css/**/*',
-            'sass/**/*',
             'fonts/**/*',
             'img/**/*',
             'js/**/*',
@@ -124,13 +123,10 @@
                     ]
                 }
             },
-            sass: {
-                build: {
-                    options: {
-                        style: 'expanded'
-                    },
+            cssmin: {
+                target: {
                     files: {
-                        'dist/css/main.css': 'sass/main.scss'
+                        'dist/css/main.css': ['css/main.css']
                     }
                 }
             },
@@ -239,7 +235,6 @@
         grunt.loadNpmTasks('grunt-contrib-jshint');
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-contrib-connect');
-        grunt.loadNpmTasks('grunt-contrib-sass');
         grunt.loadNpmTasks('grunt-mocha-phantomjs');
         grunt.loadNpmTasks('grunt-shell');
         grunt.loadNpmTasks('grunt-bootlint');
@@ -254,7 +249,7 @@
         grunt.registerTask('build', [
             'clean',
             'copy:build',
-            'sass:build',
+            'css:build',
             'htmlmin:build'
         ]);
 
