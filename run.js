@@ -16,3 +16,6 @@ app.listen(app.get('port'), function() {
     console.log('listening');}
 );
 
+app.post('/user/contact', function (req, res) {
+    res.send('POST received.');
+});
