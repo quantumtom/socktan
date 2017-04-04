@@ -249,7 +249,7 @@
         grunt.registerTask('build', [
             'clean',
             'copy:build',
-            'css:build',
+            'cssmin',
             'htmlmin:build'
         ]);
 
