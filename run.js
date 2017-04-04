@@ -16,10 +16,3 @@ app.listen(app.get('port'), function() {
     console.log('listening');}
 );
 
-var multer  = require('multer');
-var upload = multer({ dest: 'dist/uploads/' });
-
-app.post('/uploads', upload.single('sourceVideo'), function (req, res, next) {
-    console.log(req.body);
-    console.log(req.file);
-});
