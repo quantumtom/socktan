@@ -4,7 +4,7 @@ define([
     'use strict';
 
     return BaseModel.extend({
-        url: 'http://localhost:5000/api/v1/contact',
+        url: '/user/contact',
         defaults: {
             name: '',
             email: '',
