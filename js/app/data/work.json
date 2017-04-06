@@ -3,6 +3,15 @@
   "lead": "Some examples of work we've done for our clients.",
   "job": [
     {
+      "slug": "anthem",
+      "title": "Anthem/Blue Cross",
+      "link": "http://connects.anthem.com",
+      "caption": "Deutsch wanted Anthem to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.",
+      "image": {
+        "url": "https://s3.amazonaws.com/socktan/img/blue-cross.png"
+      }
+    },
+    {
       "slug": "metapants",
       "title": "MetaPants",
       "link": "http://www.metapants.com",
@@ -18,15 +27,6 @@
       "caption": "Real-time satellite weather. A little project animating a series of satellite weather images.",
       "image": {
         "url": "https://s3.amazonaws.com/socktan/img/noaa-96x96.png"
-      }
-    },
-    {
-      "slug": "anthem",
-      "title": "Anthem/Blue Cross",
-      "link": "http://connects.anthem.com",
-      "caption": "Deutsch wanted Anthem to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.",
-      "image": {
-        "url": "https://s3.amazonaws.com/socktan/img/blue-cross.png"
       }
     },
     {
