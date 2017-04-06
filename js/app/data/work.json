@@ -1,27 +1,7 @@
 {
-  "title": "work",
-  "lead": "what we do",
+  "title": "Our Work",
+  "lead": "Some examples of work we've done for our clients.",
   "job": [
-    {
-      "slug": "snervous",
-      "first": true,
-      "title": "Snervous",
-      "link": "http://www.snervous.com",
-      "caption": "Interactive brochure site for Tyler Oakley's eponymous feature film 'Snervous'.",
-      "image": {
-        "url": "img/snervous.jpg"
-      }
-    },
-    {
-      "slug": "betch",
-      "first": true,
-      "title": "Betch",
-      "link": "http://www.betchsketch.com",
-      "caption": "Interactive brochure site for the Betch Sketch eponymous feature film.",
-      "image": {
-        "url": "img/betch.png"
-      }
-    },
     {
       "slug": "metapants",
       "title": "MetaPants",
@@ -74,6 +54,26 @@
       "caption": "MTV Networks Entertainment division wanted to spruce up their mobile presence ahead of the 2011 Electronics Entertainment Expo. Solution: rapid deployment of a jQuery Mobile Framework version of their site.",
       "image": {
         "url": "https://s3.amazonaws.com/socktan/img/gt-mobile-reviews-96x96.png"
+      }
+    },
+    {
+      "slug": "snervous",
+      "first": true,
+      "title": "Snervous",
+      "link": "http://www.snervous.com",
+      "caption": "Interactive brochure site for Tyler Oakley's eponymous feature film 'Snervous'.",
+      "image": {
+        "url": "img/snervous.jpg"
+      }
+    },
+    {
+      "slug": "betch",
+      "first": true,
+      "title": "Betch",
+      "link": "http://www.betchsketch.com",
+      "caption": "Interactive brochure site for the Betch Sketch eponymous feature film.",
+      "image": {
+        "url": "img/betch.png"
       }
     },
     {

@@ -31,20 +31,21 @@ app.post('/user/contact', function (req, res) {
 
     //Mail options
     mailOpts = {
-        from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
+        from: req.body.userName + ' &lt;' + req.body.userEmail + '&gt;', //grab form data from the request body object
         to: 'cornyn@gmail.com',
         subject: 'Website contact form',
-        text: req.body.message
+        text: req.body.userMessage
     };
 
+    console.log(req.body);
+
     smtpTrans.sendMail(mailOpts, function (error, response) {
-        //Email not sent
-        if (error) {
-            res.render('contact', { title: 'socktan.com - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' });
-        }
-        //Yay!! Email sent
-        else {
+        if (!error) {
+            //Yay!! Email sent
             res.render('contact', { title: 'socktan.com - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' });
+        } else {
+            //Email not sent
+            res.render('contact', { title: 'socktan.com - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' });
         }
     });
 

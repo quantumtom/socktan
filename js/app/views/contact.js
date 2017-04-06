@@ -2,9 +2,8 @@ define([
     'views/base',
     'Handlebars',
     'hbar!parts/contact',
-    'json!data/contact.json',
     'models/contact'
-], function (BaseView, Handlebars, contactPart, contactData, ContactModel) {
+], function (BaseView, Handlebars, contactPart, ContactModel) {
     'use strict';
 
     return BaseView.extend({
@@ -13,8 +12,7 @@ define([
         },
         initialize: function (options) {
             this.options = options;
-            this.content = contactData;
-            this.template = Handlebars.compile(contactPart(this.content));
+            this.template = Handlebars.compile(contactPart());
         },
         onSubmit: function (event) {
             event.preventDefault();

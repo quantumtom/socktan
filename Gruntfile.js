@@ -124,6 +124,9 @@
                 }
             },
             cssmin: {
+                options: {
+                    sourceMap: true
+                },
                 target: {
                     files: {
                         'dist/css/main.css': ['css/main.css']
