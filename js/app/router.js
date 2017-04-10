@@ -8,7 +8,7 @@ define([
             // Define some URL routes
             'about': 'showAbout',
             'contact': 'showContact',
-            'work': 'showWork',
+            'reel': 'showWork',
             '*actions': 'showAbout'
         }
     });

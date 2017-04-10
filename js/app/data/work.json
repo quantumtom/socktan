@@ -31,7 +31,7 @@
     },
     {
       "slug": "Htc",
-      "title": "HTC ReZound (mobile site)",
+      "title": "HTC ReZound",
       "link": "http://www.webkitlab.com",
       "caption": "HTC - another Deutsch client - introduced its Verizon ReZound handset and wanted a mobile site to show off the phone, on the phone. We customized a jQuery Mobile Framework site and threw in some cool extras. Like a 360 view of the phone that\"s rotated by swiping the touch screen left or right.",
       "image": {
@@ -40,7 +40,7 @@
     },
     {
       "slug": "Bare",
-      "title": "Bare Escentuals Cosmetics",
+      "title": "Bare Escentuals",
       "link": "https://www.facebook.com/bareminerals",
       "caption": "TBWA\\Chiat\\Day\\Tequila needed a Facebook page that would tie in with  Bare Escentuals Cosmetics\"  Be a Force of Beauty&trade; campaign. With seven video segments, it made sense to build a video channel. We seized the opportunity to use the built-in video capabilities of newer web browsers.",
       "image": {
@@ -49,7 +49,7 @@
     },
     {
       "slug": "Gt",
-      "title": "GameTrailers (mobile site)",
+      "title": "GameTrailers.com",
       "link": "http://www.gametrailers.com/netstorage/mobile",
       "caption": "MTV Networks Entertainment division wanted to spruce up their mobile presence ahead of the 2011 Electronics Entertainment Expo. Solution: rapid deployment of a jQuery Mobile Framework version of their site.",
       "image": {
