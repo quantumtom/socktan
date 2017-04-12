@@ -6,7 +6,6 @@
 </p>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
-
     {{#each job}}
       <div class="panel-heading" role="tab" id="heading{{ this.slug }}">
         <h4 class="panel-title">

@@ -4,6 +4,7 @@
   "job": [
     {
       "slug": "anthem",
+      "first": true,
       "title": "Anthem/Blue Cross",
       "link": "http://connects.anthem.com",
       "caption": "Deutsch wanted Anthem to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.",
@@ -13,7 +14,7 @@
     },
     {
       "slug": "metapants",
-      "title": "MetaPants",
+      "title": "Metapants",
       "link": "http://www.metapants.com",
       "caption": "A \"living\" style guide for Bootstrap components implemented through Handlebars via RequireJS.",
       "image": {
@@ -22,7 +23,7 @@
     },
     {
       "slug": "ninjasparkle",
-      "title": "NinjaSparkle",
+      "title": "Ninja Sparkle",
       "link": "http://www.ninjasparkle.com",
       "caption": "Real-time satellite weather. A little project animating a series of satellite weather images.",
       "image": {
@@ -58,7 +59,6 @@
     },
     {
       "slug": "snervous",
-      "first": true,
       "title": "Snervous",
       "link": "http://www.snervous.com",
       "caption": "Interactive brochure site for Tyler Oakley's eponymous feature film 'Snervous'.",
@@ -68,7 +68,6 @@
     },
     {
       "slug": "betch",
-      "first": true,
       "title": "Betch",
       "link": "http://www.betchsketch.com",
       "caption": "Interactive brochure site for the Betch Sketch eponymous feature film.",
