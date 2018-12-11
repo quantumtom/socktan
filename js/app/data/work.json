@@ -1,33 +1,42 @@
 {
-  "title": "Our Work",
-  "lead": "Some examples of work we've done for our clients.",
+  "title": "Work",
+  "lead": "A few samples",
   "job": [
     {
-      "slug": "anthem",
       "first": true,
+      "slug": "redbull",
+      "title": "Red Bull Organics",
+      "link": "https://www.organicsbyredbull.com/us/en",
+      "caption": "Single-page marketing page for Red Bull Organics.",
+      "image": {
+        "url": "img/redbullorganics.png"
+      }
+    },
+    {
+      "slug": "marcflennert",
+      "title": "Marc Flennert",
+      "link": "http://www.prettyrare.net",
+      "caption": "Simple portfolio site made using Bootstrap 4 and Webpack.",
+      "image": {
+        "url": "img/marcflennert.jpg"
+      }
+    },
+    {
+      "slug": "redbull",
+      "title": "Red Bull - RoxRite 100",
+      "link": "https://www.redbull.com/us-en/projects/roxrite100",
+      "caption": "Single-page app injected into RedBull.com using webpack.",
+      "image": {
+        "url": "img/red_bull.png"
+      }
+    },
+    {
+      "slug": "anthem",
       "title": "Anthem/Blue Cross",
       "link": "http://connects.anthem.com",
       "caption": "Deutsch wanted Anthem to improve the usability of their four public outreach sites. After a third-party conducted a statistical usability study, we took the redesigned site and implemented all of the new design specs in a standards-compliant, cross-browser compatible web stack.",
       "image": {
         "url": "https://s3.amazonaws.com/socktan/img/blue-cross.png"
-      }
-    },
-    {
-      "slug": "metapants",
-      "title": "Metapants",
-      "link": "http://www.metapants.com",
-      "caption": "A \"living\" style guide for Bootstrap components implemented through Handlebars via RequireJS.",
-      "image": {
-        "url": "img/vendors/bootstrap/logo-01.png"
-      }
-    },
-    {
-      "slug": "ninjasparkle",
-      "title": "Ninja Sparkle",
-      "link": "http://www.ninjasparkle.com",
-      "caption": "Real-time satellite weather. A little project animating a series of satellite weather images.",
-      "image": {
-        "url": "https://s3.amazonaws.com/socktan/img/noaa-96x96.png"
       }
     },
     {
