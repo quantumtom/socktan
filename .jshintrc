@@ -1,13 +1,15 @@
 {
-  "curly": "true",
-  "eqnull": "true",
-  "eqeqeq": "true",
-  "undef": "true",
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "esversion": 6,
   "globals": {
     "console": true,
     "define": true,
     "jQuery": true,
     "require": true,
-    "module": true
+    "module": true,
+    "__dirname": true
   }
 }
