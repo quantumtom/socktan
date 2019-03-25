@@ -24,7 +24,7 @@ app.post('/user/contact', function (req, res) {
         service: 'Gmail',
         auth: {
             user: "cornyn@gmail.com",
-            pass: "vamsvsldztwsmjqr"
+            pass: process.env.SMTP_PASS
         }
     });
 
@@ -41,10 +41,7 @@ app.post('/user/contact', function (req, res) {
     smtpTrans.sendMail(mailOpts, function (error, response) {
         if (!error) {
             //Yay!! Email sent
-            res.render('contact', { title: 'socktan.com - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' });
-        } else {
-            //Email not sent
-            res.render('contact', { title: 'socktan.com - Contact', msg: 'Error occured, message not sent.', err: true, page: 'contact' });
+            response.render('contact', { title: 'socktan.com - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' });
         }
     });
 
