@@ -3,16 +3,6 @@
   "lead": "A few samples",
   "job": [
     {
-      "first": true,
-      "slug": "redbull",
-      "title": "Red Bull Organics",
-      "link": "https://www.organicsbyredbull.com/us/en",
-      "caption": "Site marketing Red Bull Organics.",
-      "image": {
-        "url": "img/redbullorganics.png"
-      }
-    },
-    {
       "slug": "marcflennert",
       "title": "Marc Flennert",
       "link": "http://www.prettyrare.net",
@@ -23,11 +13,21 @@
     },
     {
       "slug": "redbull",
+      "first": true,
       "title": "Red Bull - RoxRite 100",
       "link": "https://www.redbull.com/us-en/projects/roxrite100",
       "caption": "Single-page app injected into RedBull.com using webpack.",
       "image": {
         "url": "img/red_bull.png"
+      }
+    },
+    {
+      "slug": "redbull",
+      "title": "Red Bull Organics",
+      "link": "https://www.organicsbyredbull.com/us/en",
+      "caption": "Site marketing Red Bull Organics.",
+      "image": {
+        "url": "img/redbullorganics.png"
       }
     },
     {
