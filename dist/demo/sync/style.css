@@ -1,0 +1,22 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Verdana, 'sans-serif';
+    margin: auto;
+    padding: 5%;
+    width: 80%;
+}
+#content {
+    border: solid black 1px;
+    height: 50%;
+    min-height: 500px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+section {
+    margin: 20px;
+}
+#locationName {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 300%;
+}
