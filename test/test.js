@@ -4,11 +4,11 @@
  */
 
 try {
-    var chai = require('chai');
+    let chai = require('chai');
 } catch (e) {}
 
 try {
-    var requirejs = require('requirejs');
+    let requirejs = require('requirejs');
 } catch (e) {}
 
 /**
@@ -21,7 +21,7 @@ try {
  * @type {*|AssertStatic|number}
  */
 
-var assert = chai.assert || window.assert;
+let assert = chai.assert || window.assert;
 
 describe('Chai Assertion Self-Test', function () {
     describe('Assert everything is ok', function () {
