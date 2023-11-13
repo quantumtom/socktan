@@ -1,10 +1,6 @@
 {
   "name": "socktan",
   "version": "1.2.2",
-  "engines": {
-    "node": "^18.17.0 || >=20.5.0",
-    "npm": "9.6.7"
-  },
   "description": "Website for socktan.com.",
   "main": "server.js",
   "scripts": {
@@ -22,12 +18,8 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "compression": "^1.7.4",
-<<<<<<< HEAD
-    "express": "^4.18.2",
-=======
     "dotenv": "^16.3.1",
     "express": "^4.17.1",
->>>>>>> 5d66203 (Add dotenv dependency.)
     "nodemailer": "^6.6.3"
   },
   "devDependencies": {

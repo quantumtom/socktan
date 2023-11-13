@@ -6,8 +6,8 @@
       "slug": "redbull",
       "first": true,
       "title": "Red Bull - RoxRite 100",
-      "link": "https://www.redbull.com/us-en/projects/roxrite100",
-      "caption": "Single-page app injected into RedBull.com using webpack.",
+      "link": "http://www.roxrite100.com",
+      "caption": "A single-page app showcasing the career of breakdancing legend RoxRite.",
       "image": {
         "url": "img/red_bull.png"
       }
@@ -15,8 +15,8 @@
     {
       "slug": "redbull",
       "title": "Red Bull Organics",
-      "link": "https://www.organicsbyredbull.com/us/en",
-      "caption": "Site marketing Red Bull Organics.",
+      "link": "https://www.redbull.com/int-en/theorganics",
+      "caption": "Site marketing the Red Bull Organics line of beverages.",
       "image": {
         "url": "img/redbullorganics.png"
       }
